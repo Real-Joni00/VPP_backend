@@ -8,7 +8,7 @@ $category_id = $parameters[1];
 
 try {
     $db = openDb();
-    $sql = "select * from kategoria where id = $category_id";
+    $sql = "select * from tuotekategoriat where id = $category_id";
     $query = $db->query($sql);
     $category = $query->fetch(PDO::FETCH_ASSOC);
 
@@ -18,8 +18,8 @@ try {
 
     header('HTTP/1.1 200 OK');
     echo json_encode(array(
-        "kategoria" => $category['nimi'],
-        "tuotteet" => $tuotteet
+        "category" => $category['nimi'],
+        "products" => $products
     ));
 }
 
