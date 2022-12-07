@@ -7,7 +7,7 @@ $name = filter_var($input->name,FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
 try {
     $db = openDb();
-    $sql = "insert into category (nimi) values ('$name')";
+    $sql = "insert into tuotekategoriat (nimi) values ('$name')";
     executeInsert($db,$sql);
     $data = array('id' => $db->lastInsertId(), 'nimi' => $name);
     print json_encode($data);    

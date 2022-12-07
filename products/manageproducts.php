@@ -11,7 +11,7 @@ try {
     $db = openDb();
     $sql = "insert into tuotteet (nimi, hinta, kuva, kategoria_id) values ('$name', '$price', NULL, '$category_id')";
     executeInsert($db, $sql);
-    $data = array('id' => $db->lastInsertId(), 'nimi' => $name, 'hinta' => $price, 'image' => NULL);
+    $data = array('id' => $db->lastInsertId(), 'nimi' => $name, 'hinta' => $price, 'kuva' => NULL);
     print json_encode($data);
 }catch (PDOException $pdoex) {
     returnError($pdoex);
