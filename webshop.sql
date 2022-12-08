@@ -8,12 +8,12 @@ create table tuotekategoriat (
 );
 
 insert into tuotekategoriat (nimi) values ('Grafiikkakortit');
-insert into tuotekategoriat (nimi) values ('Kovalevyt');
+insert into tuotekategoriat (nimi) values ('Kiintolevyt');
 insert into tuotekategoriat (nimi) values ('Muistit');
 insert into tuotekategoriat (nimi) values ('Prosessorit');
 insert into tuotekategoriat (nimi) values ('Äänikortit');
-
-
+insert into tuotekategoriat (nimi) values ('Emolevyt');
+insert into tuotekategoriat (nimi) values ('Tuulettimet');
 
 create table tuotteet (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -29,9 +29,30 @@ create table tuotteet (
 insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin grafiikkakortti', 100,1);
 insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi grafiikkakortti', 200,1);
 insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan grafiikkakortti', 567,1);
+
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin kiintolevy', 50,2);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi kiintolevy', 130,2);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan kiintolevy', 190,2);
+
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin muistimoduli', 90,3);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi muistimoduli', 154,3);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan muistimoduli', 273,3);
+
 insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin prosessori', 100,4);
 insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi prosessori', 200,4);
 insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan prosessori', 800,4);
+
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin äänikortti', 30,5);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi äänikortti', 70,5);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan äänikortti', 110,5);
+
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin emolevy', 170,6);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi emolevy', 250,6);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan emolevy', 776,6);
+
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin tuuletin', 6,7);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi tuuletin', 30,7);
+insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan tuuletin', 90,7);
 
 create table asiakas (
     id int primary key auto_increment,
