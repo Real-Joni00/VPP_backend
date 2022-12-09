@@ -23,12 +23,11 @@ create table tuotteet (
     ON DELETE RESTRICT
 );
 
-insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin grafiikkakortti', 100,1);
-insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi grafiikkakortti', 200,1);
-insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan grafiikkakortti', 567,1);
-insert into tuotteet (nimi,hinta,kategoria_id) values ('Perusmallin prosessori', 100,4);
-insert into tuotteet (nimi,hinta,kategoria_id) values ('Parempi prosessori', 200,4);
-insert into tuotteet (nimi,hinta,kategoria_id) values ('Huippuluokan prosessori', 800,4);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus GeForce RTX 3060 -näytönohjain, 12GB', 449, 4);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('MSI GeForce RTX 3060 -näytönohjain, 12GB', 549, 4);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('KFA2 GeForce RTX 4090 -näytönohjain, 24GB', 409, 4);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Gigabyte GeForce RTX 3070 -näytönohjain, 8GB', 779, 4);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus GeForce RTX 4090 -näytönohjain, 24GB ', 2399, 4);
 
 create table asiakas (
     id int primary key auto_increment,
