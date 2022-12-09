@@ -29,6 +29,12 @@ INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('KFA2 GeForce RTX 4090 -
 INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Gigabyte GeForce RTX 3070 -näytönohjain, 8GB', 779, 4);
 INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus GeForce RTX 4090 -näytönohjain, 24GB ', 2399, 4);
 
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus TUF B550 ATX -emolevy', 179, 1);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus ROG B550 ATX -emolevy', 219, 1);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus PRIME B550 ATX -emolevy', 169, 1);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('MSI PRO Z690 ATX -emolevy', 219, 1);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus TUF B650 ATX -emolevy', 179, 1);
+
 create table asiakas (
     id int primary key auto_increment,
     etunimi varchar(50) not null,
