@@ -5,8 +5,8 @@ create table tuotekategoriat ( id INT PRIMARY KEY AUTO_INCREMENT,
     nimi VARCHAR(50) NOT NULL
 );
 
-insert into tuotekategoriat (nimi) values ('Grafiikkakortit');
-insert into tuotekategoriat (nimi) values ('Kovalevyt');
+insert into tuotekategoriat (nimi) values ('Emolevyt');
+insert into tuotekategoriat (nimi) values ('SSD-levyt');
 insert into tuotekategoriat (nimi) values ('Muistit');
 insert into tuotekategoriat (nimi) values ('Näytönohjaimet');
 insert into tuotekategoriat (nimi) values ('Prosessorit');
