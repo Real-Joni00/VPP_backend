@@ -35,6 +35,13 @@ INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus PRIME B550 ATX -em
 INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('MSI PRO Z690 ATX -emolevy', 219, 1);
 INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Asus TUF B650 ATX -emolevy', 179, 1);
 
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('AMD Ryzen 7 5800X3D', 459, 5);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('AMD Ryzen 5 5600X', 209, 5);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('AMD Ryzen 5 7600X', 319, 5);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Intel Core i7-13700K', 569, 5);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Intel Core i5-13600K', 429, 5);
+
+
 create table asiakas (
     id int primary key auto_increment,
     etunimi varchar(50) not null,
