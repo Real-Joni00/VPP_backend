@@ -41,6 +41,13 @@ INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('AMD Ryzen 5 7600X', 319
 INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Intel Core i7-13700K', 569, 5);
 INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Intel Core i5-13600K', 429, 5);
 
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Kingston 16GB Fury Beast', 73, 3);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Kingston 32GB Fury Renegade', 159, 3);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Corsair 16GB Vengeance', 79, 3);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Corsair 32GB Vengeance', 129, 3);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('G.Skill 16GB Ripjaws V', 68, 3);
+
+
 
 create table asiakas (
     id int primary key auto_increment,
