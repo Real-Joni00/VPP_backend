@@ -47,6 +47,12 @@ INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Corsair 16GB Vengeance'
 INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Corsair 32GB Vengeance', 129, 3);
 INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('G.Skill 16GB Ripjaws V', 68, 3);
 
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Samsung 1TB 980 SSD-levy', 115, 2);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Samsung 1TB PRO 980 SSD-levy', 135, 2);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Samsung 2TB PRO 980 SSD-levy', 270, 2);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Kingston 1TB NV2 SSD-levy', 90, 2);
+INSERT INTO tuoteet (nimi, hinta, kategoria_id) VALUES ('Kingston 480GB A400 SSD-levy', 49, 2);
+
 
 
 create table asiakas (
