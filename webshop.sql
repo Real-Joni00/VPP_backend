@@ -17,21 +17,21 @@ create table tuotteet (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nimi VARCHAR(100) NOT NULL,
     hinta DOUBLE (10,2) NOT NULL,
-    tuotekuvaus VARCHAR(1555),
     kuva LONGBLOB,
+    tuotekuvaus VARCHAR(1555),
     kategoria_id INT NOT NULL,
     index kategoria_id(kategoria_id),
     FOREIGN KEY (kategoria_id) REFERENCES tuotekategoriat(id)
     ON DELETE RESTRICT
 );
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus GeForce RTX 3060 -näytönohjain, 12GB', 449, 'ASUS Dual GeForce RTX™ 3060 tarjoaa uusimman NVIDIA Ampere -arkkitehtuurin puhtaimmassa muodossaan yhdistäen suorituskyvyn ja yksinkertaisuuden parhaalla tavalla. Dual hyödyntää huipputason näytönohjaimien edistyneitä jäähdytysteknologioita. Siinä painotetaan tyylin sijaan sisältöä, joten se on täydellinen valinta tasapainoiseen kokoonpanoon. Lähde mukaan nauttimaan huippuluokan pelitehosta.', 4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('MSI GeForce RTX 3060 -näytönohjain, 12GB', 549, 'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.', 4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('KFA2 GeForce RTX 4090 -näytönohjain, 24GB', 2479, 'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan. Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin luoda ja nopeuttaa työnkulkuja.', 4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Gigabyte GeForce RTX 3070 -näytönohjain, 8GB', 779, 'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.', 4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus GeForce RTX 4090 -näytönohjain, 24GB', 2399, 'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan. Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin luoda ja nopeuttaa työnkulkuja.', 4);
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus GeForce RTX 3060 -näytönohjain, 12GB', 449.90, 'ASUS Dual GeForce RTX™ 3060 tarjoaa uusimman NVIDIA Ampere -arkkitehtuurin puhtaimmassa muodossaan yhdistäen suorituskyvyn ja yksinkertaisuuden parhaalla tavalla. Dual hyödyntää huipputason näytönohjaimien edistyneitä jäähdytysteknologioita. Siinä painotetaan tyylin sijaan sisältöä, joten se on täydellinen valinta tasapainoiseen kokoonpanoon. Lähde mukaan nauttimaan huippuluokan pelitehosta.', 4);
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('MSI GeForce RTX 3060 -näytönohjain, 12GB', 549.90, 'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.', 4);
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('KFA2 GeForce RTX 4090 -näytönohjain, 24GB', 2479.90, 'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan. Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin luoda ja nopeuttaa työnkulkuja.', 4);
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Gigabyte GeForce RTX 3070 -näytönohjain, 8GB', 779.90, 'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.', 4);
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus GeForce RTX 4090 -näytönohjain, 24GB', 2399.90, 'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan. Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin luoda ja nopeuttaa työnkulkuja.', 4);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus TUF B550 ATX -emolevy', 179,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus TUF B550 ATX -emolevy', 179.90,'Tekniset tiedot:
 Prosessorituki:
 3. sukupolven AMD Ryzen -prosessorit
 AM4
@@ -52,7 +52,7 @@ Verkkokortti:
 
 WLAN & Bluetooth:
 M.2 slot (Key E)', 1);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus ROG B550 ATX -emolevy', 219,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus ROG B550 ATX -emolevy', 219.90,'Tekniset tiedot:
 
 Prosessorituki:
 3. sukupolven AMD Ryzen -prosessorit
@@ -72,7 +72,7 @@ ROG SupremeFX 7.1-Channel High Definition Audio CODEC S1220A
 Verkkokortti:
 1 x Intel® I225-V 2.5Gb Ethernet
 ', 1);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus PRIME B550 ATX -emolevy', 169,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus PRIME B550 ATX -emolevy', 169.90,'Tekniset tiedot:
 
 Prosessorituki:
 LGA1700 kanta
@@ -95,7 +95,7 @@ Verkkokortti:
 WLAN & Bluetooth:
 M.2 slot only
 ', 1);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('MSI PRO Z690 ATX -emolevy', 219,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('MSI PRO Z690 ATX -emolevy', 219.90,'Tekniset tiedot:
 
 Prosessorituki:
 LGA1700 kanta
@@ -119,7 +119,7 @@ Realtek® ALC897 Codec
 
 Verkkokortti:
 1x Intel® L225V 2.5Gbps LAN controller', 1);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus TUF B650 ATX -emolevy', 279,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Asus TUF B650 ATX -emolevy', 279.90,'Tekniset tiedot:
 
 Prosessorituki:
 AMD AM5 -kanta
@@ -139,7 +139,7 @@ Realtek ALC S1200A 7.1 Surround Sound High Definition Audio CODEC
 Verkkokortti:
 1 x Realtek 2.5Gb Ethernet', 1);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('AMD Ryzen 7 5800X3D', 459,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('AMD Ryzen 7 5800X3D', 459.90,'Tekniset tiedot:
 
 Malli: Ryzen 7 5800X3D
 Ydinten määrä: 8
@@ -163,7 +163,7 @@ Erikoisominaisuudet:
 AMD StoreMI Technology
 AMD "Zen 3" Core Architecture
 AMD Ryzen™ VR-Ready Premium', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('AMD Ryzen 5 5600X', 209,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('AMD Ryzen 5 5600X', 209.90,'Tekniset tiedot:
 
 Malli: Ryzen 5 5600
 Ydinten määrä: 6
@@ -188,7 +188,7 @@ Erikoisominaisuudet:
 AMD StoreMI Technology
 AMD "Zen 3" Core Architecture
 AMD Ryzen™ VR-Ready Premium', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('AMD Ryzen 5 7600X', 319,'Puhdasta pelisuorituskykyä - hanki 6-ytiminen prosessori, joka on suunniteltu intensiiviseen pelitoimintaan!
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('AMD Ryzen 5 7600X', 319.90,'Puhdasta pelisuorituskykyä - hanki 6-ytiminen prosessori, joka on suunniteltu intensiiviseen pelitoimintaan!
 
 Tekniset tiedot:
 
@@ -229,7 +229,7 @@ Tuetut teknologiat:
 
 AMD EXPO™ Technology
 AMD Ryzen™ Technologies', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Intel Core i7-13700K', 569,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Intel Core i7-13700K', 569.90,'Tekniset tiedot:
 
 Malli: Core i7-13700K
 Ydinten määrä: 16 (8P + 8E)
@@ -254,7 +254,7 @@ Muistituki:
 Maksimi muistinopeus: DDR5 5600 / DDR4 3200 MT/s
 Muistikanavat: 2
 Maksimi muistikapasiteetti: 128 GB', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Intel Core i5-13600K', 429,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Intel Core i5-13600K', 429.90,'Tekniset tiedot:
 
 Malli: Core i5-13600K
 Ydinten määrä: 14 (6P + 8E)
@@ -279,7 +279,7 @@ Maksimi muistinopeus: DDR5 5600 / DDR4 3200 MT/s
 Muistikanavat: 2
 Maksimi muistikapasiteetti: 128 GB', 5);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Kingston 16GB Fury Beast', 73, 'Ominaisuudet:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Kingston 16GB Fury Beast', 73.90, 'Ominaisuudet:
 
 Matalaprofiilinen lämmönlevittimen design
 Kustannustehokas ja suorituskykyinen DDR4-päivitys
@@ -294,7 +294,7 @@ Nopeus: 3200MHz
 Latenssi: CL16 (16-18-18)
 Jännite: 1.35 V
 Rank: Single Rank (1R)', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Kingston 32GB Fury Renegade', 159, 'Ominaisuudet:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Kingston 32GB Fury Renegade', 159.90, 'Ominaisuudet:
 
 Korkeat nopeudet ja matalat latenssit toimittavat äärimmäistä suorituskykyä
 Intel XMP-profiilit optimoituja Intelin tuoreimmille piirisarjoille
@@ -308,7 +308,7 @@ Nopeus: 3600MHz
 Latenssi: CL16 (16-20-20)
 Jännite: 1.35 V
 Rank: Dual Rank (2R)', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Corsair 16GB Vengeance', 79, 'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Corsair 16GB Vengeance', 79.90, 'Tekniset tiedot:
 
 Kapasiteetti: 16GB (2 x 8GB)
 Muistityyppi: DDR4 DIMM 288-pin
@@ -322,7 +322,7 @@ Jäähdytys: Eloksoitu alumiini
 SPD nopeus: 2133 MHz
 SPD latenssi: 15-15-15-36
 SPD jännite: 1.20 V', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Corsair 32GB Vengeance', 129, 'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Corsair 32GB Vengeance', 129.90, 'Tekniset tiedot:
 
 Kapasiteetti: 32GB (2 x 16GB)
 Muistityyppi: DDR4 DIMM 288-pin
@@ -335,7 +335,7 @@ Jäähdytys: Eloksoitu alumiini
 SPD nopeus: 2666 MHz
 SPD latenssi: 18-18-18-43
 SPD jännite: 1.20 V', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('G.Skill 16GB Ripjaws V', 68, 'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('G.Skill 16GB Ripjaws V', 68.90, 'Tekniset tiedot:
 
 Malli: Ripjaws V
 Tyyppi: DDR4
@@ -350,27 +350,27 @@ Jännite (SPD): 1.20 V
 Takuu: Elinikäinen
 Ominaisuudet: Intel XMP 2.0 (Extreme Memory Profile) Ready', 3);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Samsung 1TB 980 SSD-levy', 114,'Päivitä NVMe:n huippunopeuksiin
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Samsung 1TB 980 SSD-levy', 114.90,'Päivitä NVMe:n huippunopeuksiin
 On aika ottaa kaikki irti tietokoneesi potentiaalista 980-mallin avulla. Riippumatta siitä tarvitsetko lisää sujuvuutta pelaamiseen vai tehoa vaativan grafiikan käsittelyyn työtehtävissäsi, 980 on erinomainen valinta. Se tarjoaa luokkansa parasta SSD-suorituskykyä, joka perustuu NVMe- ja PCIe 3.0 -tekniikkaan.
 
 Salamannopea
 Täyttä vauhtia eteenpäin. 980 hyödyntää PCIe 3.0 -väylän tarjoamia nopeusetuja HMB-tekniikan ja merkittävästi parantuneen NVMe-tehokkuuden kautta. Rakenne ei sisällä DRAM-muistia ja levy tarjoaa erinomaista vastinetta rahoille sillä sen sekventiaaliset luku-/kirjoitusnopeudet ovat jopa 3 500/3 000 Mt/s* – yli 6,2 kertaa nopeampia kuin SATA SSD -levyillä.', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Samsung 1TB PRO 980 SSD-levy', 134,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Samsung 1TB PRO 980 SSD-levy', 134.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
 
 Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.
 
 Enimmäisnopeus - 980 PRO:ssa on Samsungin oma Elpis Controller, joka varmistaa PCIe 4.0 SSD -liitännän optimoidun nopeuden. Lukunopeus on jopa 7 000 Mt/s, mikä on kaksi kertaa nopeampi kuin PCIe 3.0 SSD -levyillä ja 12,7 kertaa nopeampi kuin SATA SSD  levyillä. 980 PRO saavuttaa enimmäisnopeuden PCIe 4.0 -liitännällä ja nopeus voi vaihdella muissa ympäristöissä.', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Samsung 2TB PRO 980 SSD-levy', 269,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Samsung 2TB PRO 980 SSD-levy', 269.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
 
 Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.
 
 Enimmäisnopeus - 980 PRO:ssa on Samsungin oma Elpis Controller, joka varmistaa PCIe 4.0 SSD -liitännän optimoidun nopeuden. Lukunopeus on jopa 7 000 Mt/s, mikä on kaksi kertaa nopeampi kuin PCIe 3.0 SSD -levyillä ja 12,7 kertaa nopeampi kuin SATA SSD  levyillä. 980 PRO saavuttaa enimmäisnopeuden PCIe 4.0 -liitännällä ja nopeus voi vaihdella muissa ympäristöissä.', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Kingston 1TB NV2 SSD-levy', 89,'Edistyksellinen lisälaite ohuisiin kannettaviin tietokoneisiin ja muihin järjestelmiin
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Kingston 1TB NV2 SSD-levy', 89.90,'Edistyksellinen lisälaite ohuisiin kannettaviin tietokoneisiin ja muihin järjestelmiin
 
 Kingstonin NV2 PCIe 4.0 NVMe SSD on varteenotettava uuden sukupolven tallennusratkaisu, jossa on Gen 4x4 NVMe -ohjain. NV2:n luku- ja kirjoitusnopeudet ovat jopa 3 500 ja 2 800 Mt/s alhaisella virrantarpeella ja vähäisellä lämmöntuotolla, mikä auttaa optimoimaan järjestelmän toimintaa ja tuomaan lisäarvoa ilman kompromisseja. Kompakti toispuoleinen M.2 2280 -malli (22 x 80 mm) laajentaa tallennustilaa jopa 2 teratavuun samalla kun se jättää tilaa vapaaksi muille komponenteille. Näin NV2 on ihanteellinen valinta ohuisiin kannettaviin tietokoneisiin, pienikokoisiin järjestelmiin ja omatoimisten tietokoneharrastajien emolevyihin.
 
 Tuotetta on saatavilla 250 gigatavun - 2 teratavun kapasiteeteilla. Näin saadaan käyttöön kaikki tarvittava tila sovelluksille, asiakirjoille, valokuville, videoille ym. sisällölle.    ', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Kingston 480GB A400 SSD-levy', 49,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, kategoria_id) VALUES ('Kingston 480GB A400 SSD-levy', 49.90,'Tekniset tiedot:
 
 Form Factor: 2.5"
 Liitäntä: SATA Rev. 3.0 (6Gb/s) - taaksepäin yhteensopiva SATA Rev. 2.0 (3Gb/s)
