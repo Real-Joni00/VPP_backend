@@ -8,7 +8,12 @@ $product_id = $parameters[1];
 
 try {
   $db = openDb();
-  selectAsJson($db,"select * from tuotteet where id = $product_id");
+  $sql = "select * from tuotteet where id = $product_id";
+  $query = $db->query($sql);
+  $product = $query->fetch(PDO::FETCH_ASSOC);
+
+  header('HTTP/1.1 200 OK');
+    echo json_encode(array("product" => $product));
 }
 catch (PDOException $pdoex) {
   returnError($pdoex);
