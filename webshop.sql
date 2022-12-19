@@ -382,69 +382,112 @@ Muistikanavat: 2
 Maksimi muistikapasiteetti: 128 GB', 'Tuotekoodi: BX8071513600K
 EAN: 5032037258746', 5);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Kingston 16GB Fury Beast', 73.90, 'Ominaisuudet:
-
-Matalaprofiilinen lämmönlevittimen design
-Kustannustehokas ja suorituskykyinen DDR4-päivitys
-Intel XMP-valmis
-Valmis AMD Ryzenille
-Valitse nopeus ja kapasiteetti omien tarpeidesi mukaan
-
-Tekniset tiedot:
-
-Kapasiteetti: 16GB (2 x 8GB)
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Kingston 16GB Fury Beast', 73.90, 'Matalaprofiilinen lämmönlevittimen design.
+Kustannustehokas ja suorituskykyinen DDR4-päivitys.
+Intel XMP-valmis.
+Valmis AMD Ryzenille.
+Valitse nopeus ja kapasiteetti omien tarpeidesi mukaan.
+','Matalaprofiilinen lämmönlevittimen design.
+Kustannustehokas ja suorituskykyinen DDR4-päivitys.
+Intel XMP-valmis.
+Valmis AMD Ryzenille.
+Valitse nopeus ja kapasiteetti omien tarpeidesi mukaan.
+','Kapasiteetti: 16GB (2 x 8GB)
 Nopeus: 3200MHz
 Latenssi: CL16 (16-18-18)
 Jännite: 1.35 V
 Rank: Single Rank (1R)', 'Tuotekoodi: KF432C16BBK2/16
 EAN: 0740617319903', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Kingston 32GB Fury Renegade', 159.90, 'Ominaisuudet:
-
-Korkeat nopeudet ja matalat latenssit toimittavat äärimmäistä suorituskykyä
-Intel XMP-profiilit optimoituja Intelin tuoreimmille piirisarjoille
-Valmis AMD Ryzenille
-Sähäkkä musta alumiininen lämmönlevitin
-
-Tekniset tiedot:
-
-Kapasiteetti: 32GB (2 x 16GB)
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Kingston 32GB Fury Renegade', 159.90, 'Korkeat nopeudet ja matalat latenssit toimittavat äärimmäistä suorituskykyä.
+Intel XMP-profiilit optimoituja Intelin tuoreimmille piirisarjoille.
+Valmis AMD Ryzenille.
+Sähäkkä musta alumiininen lämmönlevitin.','Korkeat nopeudet ja matalat latenssit toimittavat äärimmäistä suorituskykyä.
+Intel XMP-profiilit optimoituja Intelin tuoreimmille piirisarjoille.
+Valmis AMD Ryzenille.
+Sähäkkä musta alumiininen lämmönlevitin.',
+'Kapasiteetti: 32GB (2 x 16GB)
 Nopeus: 3600MHz
 Latenssi: CL16 (16-20-20)
 Jännite: 1.35 V
 Rank: Dual Rank (2R)', 'Tuotekoodi: KF436C16RB1K2/32
 EAN: 0740617322514', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Corsair 16GB Vengeance', 79.90, 'Tekniset tiedot:
-
-Kapasiteetti: 16GB (2 x 8GB)
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Corsair 16GB Vengeance', 79.90, '	Musta jäähdytyslevy, kaksikanavainen, 8 kerroksen PCB-muistinjäähdytin, Black PCB, anodized aluminum heatspreader, Intel Extreme Memory Profiles (XMP 2.0), Vengeance LPX low profile heatspreader, puskuroimaton',
+'Musta jäähdytyslevy, kaksikanavainen, 8 kerroksen PCB-muistinjäähdytin, Black PCB, anodized aluminum heatspreader, Intel Extreme Memory Profiles (XMP 2.0), Vengeance LPX low profile heatspreader, puskuroimaton. Corsair Vengeance LPX . Komponentti (tuotteelle): PC/palvelin, Sisäinen muisti: 16 GB, Muistin sijoitus (moduulit x koko): 2 x 8 GB, Sisäisen muistin tyyppi: DDR4, Muistin kellotaajuus: 3200 MHz, Muisti: 288-pin DIMM, CAS-viive: 16, Tuotteen väri: Musta',
+'Kapasiteetti: 16GB (2 x 8GB)
 Muistityyppi: DDR4 DIMM 288-pin
 Nopeus: 3600 MHz (PC4-28800)
 Latenssi:  18-22-22-42
 Jännite: 1.35 V
 Ominaisuudet: Intel XMP 2.0 -tuki
 Jäähdytys: Eloksoitu alumiini
-
-
 SPD nopeus: 2133 MHz
 SPD latenssi: 15-15-15-36
 SPD jännite: 1.20 V', 'Tuotekoodi: CMK16GX4M2D3600C18
 EAN: 0840006612971', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Corsair 32GB Vengeance', 129.90, 'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Corsair 32GB Vengeance', 129.90, 'VENGEANCE LPX -muisti on suunniteltu erittäin suorituskykyiseen ylikellotukseen. Lämmönkestäjä on valmistettu puhtaasta alumiinista nopeamman lämmönpoiston aikaansaamiseksi. Kahdeksan kerroksen piirilevy auttaa hallitsemaan lämpöä ja tarjoaa ylivoimaisen ylikellotuksen ylätilaan.',
+'VENGEANCE LPX -muisti on suunniteltu erittäin suorituskykyiseen ylikellotukseen. Lämmönkestäjä on valmistettu puhtaasta alumiinista nopeamman lämmönpoiston aikaansaamiseksi. Kahdeksan kerroksen piirilevy auttaa hallitsemaan lämpöä ja tarjoaa ylivoimaisen ylikellotuksen ylätilaan.
 
-Kapasiteetti: 32GB (2 x 16GB)
+
+Ominaisuudet:
+
+Suunniteltu korkean suorituskyvyn ylikellotukseen:
+VENGEANCE LPX -muisti on suunniteltu erittäin suorituskykyiseen ylikellotukseen. Lämmitin on valmistettu puhtaasta alumiinista nopeamman lämmön haihtumisen varalta. Mukautettu suorituskykyinen piirilevy auttaa hallitsemaan lämpöä ja tarjoaa ylivoimaisen ylikellotuksen. Jokainen IC seulotaan erikseen huipputehopotentiaalin suhteen.
+
+Yhteensopivuus testattu:
+Osa tyhjentävästä testausprosessistamme sisältää suorituskyvyn ja yhteensopivuuden testauksen melkein jokaisella markkinoilla olevalla emolevyllä - ja harvoilla, jotka eivät ole.
+
+XMP 2.0 -tuki:
+Yksi asetus on kaikki, jotta säädetään automaattisesti VENGEANCE LPX -sarjan nopeimmalle turvalliselle nopeudelle. Saat uskomattoman, luotettavan suorituskyvyn ilman lukitusta tai muuta outoa käyttäytymistä.
+
+Alumiininen lämmönlevitin:
+Ylikellotusta yläpuolella rajoittaa käyttölämpötila. VENGEANCE LPX -lämpölevittimen ainutlaatuinen muotoilu vie optimaalisesti lämmön pois integroiduista komponenteista järjestelmän jäähdytyspolulle, joten voit työntää sitä kovemmin.
+
+Suunniteltu korkean suorituskyvyn ylikellotukseen:
+Jokainen VENGEANCE LPX -moduuli on rakennettu mukautetusta suorituskyvyn piirilevystä ja erittäin turvatarkistetusta muistin IC: stä. Tehokas lämmönlevitin tarjoaa tehokkaan jäähdytyksen ylikelloituspotentiaalin parantamiseksi.
+
+Matalan profiilin muotoilu:
+Pieni muotokerroin tekee siitä ihanteellisen pienissä tapauksissa tai muissa järjestelmissä, joissa sisätila on huippuluokkaa.
+
+Vastaa järjestelmääsi:
+Paras korkea suorituskykyinen järjestelmä näyttää yhtä hyvältä kuin se toimii. VENGEANCE LPX on saatavana useissa väreissä vastaamaan emolevyäsi, muita komponenttejasi, koteloa tai vain suosikkivärisi.
+DDR4-muotokerroin on optimoitu viimeisimpiin DDR4-järjestelmiin ja tarjoaa korkeammat taajuudet, suuremman kaistanleveyden ja pienemmän virrankulutuksen kuin DDR3-moduulit. VENGEANCE LPX DDR4 -moduulit ovat yhteensopivuustestattuja DDR4-järjestelmissä luotettavan nopean suorituskyvyn saavuttamiseksi. Siellä on XMP 2.0 -tuki ongelmattomalle automaattiselle ylikellotukselle. Ja niitä on saatavana useissa väreissä vastaamaan henkilökohtaisia mieltymyksiäsi.
+
+Maailmankuulu luotettavuus:
+On syytä, miksi maailmanmestaruuden ylikellottajat, äärimmäisen pelin harrastajat ja huippuluokan järjestelmien rakentajat luottavat kaikki CORSAIRiin korkean suorituskyvyn muistiin, jonka ne voivat asentaa luottavaisesti ja ylpeänä. Rikotatko CORSAIR-muistia riippumatta siitä, rikotko omia levyjäsi tai rakennat vain unelmapelaamista.',
+'Kapasiteetti: 32GB (2 x 16GB)
 Muistityyppi: DDR4 DIMM 288-pin
 Nopeus: 3600 MHz (PC4-28800)
 Latenssi: 18-22-22-42
 Jännite: 1.35 V
 Ominaisuudet: Intel XMP 2.0 -tuki
 Jäähdytys: Eloksoitu alumiini
-
 SPD nopeus: 2666 MHz
 SPD latenssi: 18-18-18-43
 SPD jännite: 1.20 V', 'Tuotekoodi: CMK32GX4M2Z3600C18
 EAN: 0840006620990', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('G.Skill 16GB Ripjaws V', 68.90, 'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('G.Skill 16GB Ripjaws V', 68.90, 'Klassisen Ripjaws-perheen viimeisin lisäys Ripjaws V -sarja on uusin kaksikanavainen DDR4-muisti, joka on suunniteltu maksimaaliseen yhteensopivuuteen ja huippuluokan suorituskykyyn Z170-sarjan piirisarjan kuudennen sukupolven Intel Core™ -prosessorin kanssa. Hienoimmista komponenteista valmistettu, tiukimmissa olosuhteissa testattu ja viisi värivaihtoehtoa tarjoava Ripjaws V on täydellinen valinta uuden suorituskykyjärjestelmän rakentamiseen tai yksinkertaiseen muistin päivitykseen.',
+'Klassisen Ripjaws-perheen viimeisin lisäys Ripjaws V -sarja on uusin kaksikanavainen DDR4-muisti, joka on suunniteltu maksimaaliseen yhteensopivuuteen ja huippuluokan suorituskykyyn Z170-sarjan piirisarjan kuudennen sukupolven Intel Core™ -prosessorin kanssa. Hienoimmista komponenteista valmistettu, tiukimmissa olosuhteissa testattu ja viisi värivaihtoehtoa tarjoava Ripjaws V on täydellinen valinta uuden suorituskykyjärjestelmän rakentamiseen tai yksinkertaiseen muistin päivitykseen.
 
-Malli: Ripjaws V
+Huippunopea siirtonopeus
+Saatavana laajalla valikoimalla taajuusvaihtoehtoja vakio-DDR4-2133MHz:stä kaksoiskanavaiseen DDR4-3733MHz:iin. Ripjaws V antaa sinun nauttia nopeammasta tietokonekokemuksesta pelaamista, videoiden ja kuvien muokkausta, renderöintiä ja tietojenkäsittelyä varten.
+
+Testattu tiukasti yhteensopivuuden ja luotettavuuden suhteen
+Jokainen Ripjaws V DDR4 -muistisarja on testattu G.SKILLin tiukan validointiprosessin avulla kaikilla tärkeimmillä suorituskykyisillä emolevymerkeillä, jotta varmistetaan luokkansa paras luotettavuus ja yhteensopivuus laajimmassa emolevyvalikoimassa.
+
+Väritä se
+Ripjaws V ei ole vain suunniteltu uudella tyylikkäällä ulkoasulla, vaan se on saatavana myös viidessä eri värissä: Blazing Red, Steel Blue, Radiant Silver, Gunmetal Grey ja Classic Black. Olitpa sitten moderaattori, joka etsii yhteensopivia sävyjä tai haluat rakentaa upean uuden järjestelmän, Ripjaws V on loistava valikoima.
+
+Moduulin korkeus 42 mm
+Jatkaen jälkimarkkinoiden CPU-jäähdyttimen yhteensopivuuden perinnettä, Ripjaws V on suunniteltu 42 mm:n moduulikorkeudella, joka sopii useimpiin ylimitoitettuihin suorittimen jäähdytyslevyihin.
+
+Jopa 64 Gt Ultra High Kapasiteetti
+Ripjaws V tarjoaa erilaisia kapasiteettikokoonpanoja, ei vain 4 Gt:n ja 8 Gt:n moduuleilla, vaan myös erittäin suurilla 16 Gt:n kapasiteetilla jopa 64 Gt (16 Gt x 4) asti. Mahdollisuudet ovat rajattomat!
+
+Tehotehokas
+Suunniteltu pienelle jännitteelle 1,2 V ~ 1,35 V DDR4-standardilla, tämä alentaa muistin jännitevaatimusta 20 % DDR3-muistisarjoista! Nyt järjestelmäsi voi toimia entistä nopeammin ilman, että siitä tulee kallis laitelämmitin.
+
+XMP 2.0 -tuki
+Aseta ja aloita. Uusimmilla Intel XMP 2.0 -profiileilla ohjelmoituna ainoa asia sinun ja äärimmäisen suorituskyvyn välillä on yksinkertainen asetus.','Malli: Ripjaws V
 Tyyppi: DDR4
 Kapasitetti: 16GB (8GBx2)
 Nopeus (testattu): 3200MHz
