@@ -17,10 +17,10 @@ create table tuotteet (
     nimi VARCHAR(100) NOT NULL,
     hinta DOUBLE (10,2) NOT NULL,
     kuva LONGBLOB,
-    tuotekuvaus_lyhyt VARCHAR(555),
-    tuotekuvaus_pitka VARCHAR(1555),
-    tekniset_tiedot VARCHAR(1555),
-    tuotekoodi VARCHAR(555),
+    tuotekuvaus_lyhyt TEXT,
+    tuotekuvaus_pitka TEXT,
+    tekniset_tiedot TEXT,
+    tuotekoodi VARCHAR(255),
     kategoria_id INT NOT NULL,
     index kategoria_id(kategoria_id),
     FOREIGN KEY (kategoria_id) REFERENCES tuotekategoriat(id)
@@ -458,40 +458,185 @@ Takuu: Elinikäinen
 Ominaisuudet: Intel XMP 2.0 (Extreme Memory Profile) Ready', 'Tuotekoodi: F4-3200C16D-16GVKB
 EAN: 4719692004970', 3);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB 980 SSD-levy', 114.90,'Päivitä NVMe:n huippunopeuksiin
-On aika ottaa kaikki irti tietokoneesi potentiaalista 980-mallin avulla. Riippumatta siitä tarvitsetko lisää sujuvuutta pelaamiseen vai tehoa vaativan grafiikan käsittelyyn työtehtävissäsi, 980 on erinomainen valinta. Se tarjoaa luokkansa parasta SSD-suorituskykyä, joka perustuu NVMe- ja PCIe 3.0 -tekniikkaan.
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB 980 SSD-levy', 114.90,'Päivitä NVMe:n huippunopeuksiin
+On aika ottaa kaikki irti tietokoneesi potentiaalista 980-mallin avulla. Riippumatta siitä tarvitsetko lisää sujuvuutta pelaamiseen vai tehoa vaativan grafiikan käsittelyyn työtehtävissäsi,
+980 on erinomainen valinta. Se tarjoaa luokkansa parasta SSD-suorituskykyä, joka perustuu NVMe- ja PCIe 3.0 -tekniikkaan.', 'Päivitä NVMe:n huippunopeuksiin
+On aika ottaa kaikki irti tietokoneesi potentiaalista 980-mallin avulla. Riippumatta siitä tarvitsetko lisää sujuvuutta pelaamiseen vai tehoa vaativan grafiikan käsittelyyn työtehtävissäsi, 
+980 on erinomainen valinta. Se tarjoaa luokkansa parasta SSD-suorituskykyä, joka perustuu NVMe- ja PCIe 3.0 -tekniikkaan.
 
 Salamannopea
-Täyttä vauhtia eteenpäin. 980 hyödyntää PCIe 3.0 -väylän tarjoamia nopeusetuja HMB-tekniikan ja merkittävästi parantuneen NVMe-tehokkuuden kautta. 
-Rakenne ei sisällä DRAM-muistia ja levy tarjoaa erinomaista vastinetta rahoille sillä sen sekventiaaliset luku-/kirjoitusnopeudet ovat jopa 3 500/3 000 Mt/s* –
-yli 6,2 kertaa nopeampia kuin SATA SSD -levyillä.', 'Tuotekoodi: MZ-V8V1T0BW
+Täyttä vauhtia eteenpäin. 980 hyödyntää PCIe 3.0 -väylän tarjoamia nopeusetuja HMB-tekniikan ja merkittävästi parantuneen NVMe-tehokkuuden kautta. Rakenne ei sisällä DRAM-muistia ja levy tarjoaa erinomaista vastinetta rahoille sillä sen sekventiaaliset luku-/kirjoitusnopeudet ovat jopa 3 500/3 000 Mt/s* – yli 6,2 kertaa nopeampia kuin SATA SSD -levyillä.
+
+Full Power Mode auttaa työskentelemään ilman taukoja
+Pidä SSD-levysi jatkuvasti tasaisen suorituskykyisenä Full Power Mode -tilan avulla joka aktivoidaan Samsung Magician -ohjelmassa.
+
+Pitkäkestoista suorituskykyä
+Tallenna tiedostosi varmasti SSD-levylle, joka on valmistettu pitkäaikaiseen käyttöön. Jopa 600 TBW ja viiden vuoden rajoitettu takuu. 980-mallin optimoitu kestävyys ja luotettavuus perustuvat Samsungin omiin ratkaisuihin – viimeisimmästä ohjaimesta V-NAND-tekniikkaan ja uusimpaan laiteohjelmistoon.
+
+Luotettavaa lämmönhallintaa
+Suorituskykyiset SSD-levyt vaativat yleensä huipputehokasta lämmönhallintaa. Vakaan suorituskyvyn takaamiseksi 980:ssä on nikkelipinnoite, joka auttaa hallitsemaan lämpötasoa. Lisäksi lämpöä pois johtava levy varmistaa NAND-piirin tehokkaan lämmönhallinnan.
+
+Samsung Magician -ohjelmisto
+Hyödynnä 980:n teho kokonaisuudessaan Samsung Magicianin helppokäyttöisten mutta samalla edistyneiden optimointityökalujen avulla.
+Voit valvoa levyn terveyttä, optimoida sen suorituskyvyn, suojata tärkeitä tietoja ja saada tärkeitä päivityksiä, kun Magician varmistaa SSD:n optimaalisen suorituskyvyn.',
+'Väylä: PCIe Gen3 X4, NVMe 1.4
+Form Factor: M.2 (2280)
+Rauta:
+
+NAND: V6(12xL) V-NAND 3bit MLC
+Kontrolleri: Pablo
+Cache muisti: DRAMless, Host Memory Buffer
+Käytettävissä oleva kapasiteetti: 1TB
+Vaiheittainen luku/kirjoitusnopeus: Jopa 3500 / 3000 MB/s
+Random Read/Write (QD1): 17 000 / 54 000 IOPS
+Random Read/Write (QD32): 500 000 / 480 000 IOPS
+Virta:
+
+Active/Peak: 4.6 W / 5.3 W
+Device Sleep (L1.2): 5 mW
+Salaus: Class 0 (AES 256), TCG/Opal v2.0, MS eDrive (IEEE1667)
+Total Bytes Written: 600 TB','Tuotekoodi: MZ-V8V1T0BW
 EAN: 8806090572210', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB PRO 980 SSD-levy', 134.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB PRO 980 SSD-levy', 134.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
+
+Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.','Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
+
+Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.
+
+Enimmäisnopeus - 980 PRO:ssa on Samsungin oma Elpis Controller, joka varmistaa PCIe 4.0 SSD -liitännän optimoidun nopeuden. Lukunopeus on jopa 7 000 Mt/s, mikä on kaksi kertaa nopeampi kuin PCIe 3.0 SSD -levyillä ja 12,7 kertaa nopeampi kuin SATA SSD  levyillä. 980 PRO saavuttaa enimmäisnopeuden PCIe 4.0 -liitännällä ja nopeus voi vaihdella muissa ympäristöissä.
+
+Voittoisa yhdistelmä - Hardcore-pelaajille ja tekniikan ystäville suunniteltu 980 PRO tarjoaa korkeaa suorituskykyä ja tehoa vaativiin sovelluksiin kuten peleihin, grafiikkaan, data-analyyseihin, ym. Pelit latautuvat nopeasti, joten voit pelata enemmän ja odotella vähemmän.
+
+Tehokas M.2 SSD - 980 PRO -levy on kompakti M.2 2280 -malli, joka on helppo liittää pöytämallisiin ja kannettaviin tietokoneisiin halutulla tavalla. Se sopii erinomaisesti suorituskykyisten tietokonejärjestelmien rakentamiseen optimoidun virtatehokkuutensa ansiosta.
+
+Luotettava lämmönhallinta - Suorituskykyiset SSD-levyt vaativat yleensä tehokasta lämmönhallintaa. Vakaan toiminnan varmistamiseksi 980 PRO:ssa on nikkelipinnoitus, joka auttaa ohjaimen lämmönhallinnassa sekä lämmönjakaja, joka tehostaa NAND-piirin lämmönhallintaa.
+
+Älykäs lämmönhallintaratkaisu - Samsungin edistynyt lämmönhallintaalgoritmi auttaa varmistamaan, että 980 PRO pitää lämmön hallinnassa luotettavan ja kestävän toiminnan varmistamiseksi. Jotta suorituskyvyn vaihtelut voidaan minimoida, Samsungin Dynamic Thermal Guard -teknologia pitää 980 PRO:n lämpötilan optimaalisella tasolla.
+
+Samsung Magician -ohjelmisto - Hyödynnä 980 PRO:n teho Samsung Magician -ohjelmiston helppokäyttöisillä mutta edistyneillä optimointitoiminnoilla. Magicianin avulla voit tarkistaa levyn terveyden, optimoida suorituskyvyn, suojata arvokkaita tietoja ja saada tärkeitä päivityksiä. Siten varmistat, että SSD-levy säilyttää parhaan mahdollisen suorituskyvyn.',
+'Yleistä
+Kapasiteetti: 1TB
+Form Factor: M.2 (2280)
+Väylä: PCIe Gen 4.0 x4, NVMe 1.3c
+Mitat (LxKxS): 80,15 x 22,15 x 2,38 mm
+Paino: Maks. 9,0 g
+Tallennusmuisti: Samsung V-NAND 3-bit MLC
+Kontrolleri: Samsung Elpis Controller
+Cache muisti: Samsung 1GB Low Power DDR4 SDRAM
+
+Erikoisominaisuudet
+ - TRIM -tuki
+ - S.M.A.R.T -tuki
+ - Garbage Collection
+ - Salaustuki: AES 256-bit Encryption (Class 0), TCG/Opal, IEEE1667 (Encrypted drive)
+ - Device Sleep Mode -tuki
+
+Suorituskyky
+Vaiheittainen luku: Jopa 6900 MB/s
+Vaiheittainen kirjoitus: Jopa 5000 MB/s
+Random Read (4KB, QD32): Jopa 1 000 000 IOPS
+Random Write (4KB, QD32): Jopa 1 000 000 IOPS
+Random Read (4KB, QD1): Jopa 22 000 IOPS
+Random Write (4KB, QD1): Jopa 60 000 IOPS
+
+Kestävyys
+Luotettavuus (MTBF): 1,5 miljoonaa tuntia
+Takuu: 5 vuotta tai 600 TBW', 
+'Tuotekoodi: MZ-V8P1T0BW
+EAN: 8806090295546', 2);
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Samsung 2TB PRO 980 SSD-levy', 269.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, 
+jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
+
+Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.','Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
 
 Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.
 
 Enimmäisnopeus - 980 PRO:ssa on Samsungin oma Elpis Controller, joka varmistaa PCIe 4.0 SSD -liitännän optimoidun nopeuden. 
 Lukunopeus on jopa 7 000 Mt/s, mikä on kaksi kertaa nopeampi kuin PCIe 3.0 SSD -levyillä ja 12,7 kertaa nopeampi kuin SATA SSD  levyillä. 
-980 PRO saavuttaa enimmäisnopeuden PCIe 4.0 -liitännällä ja nopeus voi vaihdella muissa ympäristöissä.', 'Tuotekoodi: MZ-V8P1T0BW
-EAN: 8806090295546', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Samsung 2TB PRO 980 SSD-levy', 269.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, 
-jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
+980 PRO saavuttaa enimmäisnopeuden PCIe 4.0 -liitännällä ja nopeus voi vaihdella muissa ympäristöissä.Voittoisa yhdistelmä - Hardcore-pelaajille ja tekniikan ystäville suunniteltu 980 PRO tarjoaa korkeaa suorituskykyä ja tehoa vaativiin sovelluksiin kuten peleihin, grafiikkaan, data-analyyseihin, ym. Pelit latautuvat nopeasti, joten voit pelata enemmän ja odotella vähemmän.
 
-Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.
+Tehokas M.2 SSD - 980 PRO -levy on kompakti M.2 2280 -malli, joka on helppo liittää pöytämallisiin ja kannettaviin tietokoneisiin halutulla tavalla. Se sopii erinomaisesti suorituskykyisten tietokonejärjestelmien rakentamiseen optimoidun virtatehokkuutensa ansiosta.
 
-Enimmäisnopeus - 980 PRO:ssa on Samsungin oma Elpis Controller, joka varmistaa PCIe 4.0 SSD -liitännän optimoidun nopeuden. Lukunopeus on jopa 7 000 Mt/s, 
-mikä on kaksi kertaa nopeampi kuin PCIe 3.0 SSD -levyillä ja 12,7 kertaa nopeampi kuin SATA SSD  levyillä. 980 PRO saavuttaa enimmäisnopeuden PCIe 4.0 -liitännällä 
-ja nopeus voi vaihdella muissa ympäristöissä.', 'Tuotekoodi: MZ-V8P2T0BW
+Luotettava lämmönhallinta - Suorituskykyiset SSD-levyt vaativat yleensä tehokasta lämmönhallintaa. Vakaan toiminnan varmistamiseksi 980 PRO:ssa on nikkelipinnoitus, joka auttaa ohjaimen lämmönhallinnassa sekä lämmönjakaja, joka tehostaa NAND-piirin lämmönhallintaa.
+
+Älykäs lämmönhallintaratkaisu - Samsungin edistynyt lämmönhallintaalgoritmi auttaa varmistamaan, että 980 PRO pitää lämmön hallinnassa luotettavan ja kestävän toiminnan varmistamiseksi. Jotta suorituskyvyn vaihtelut voidaan minimoida, Samsungin Dynamic Thermal Guard -teknologia pitää 980 PRO:n lämpötilan optimaalisella tasolla.
+
+Samsung Magician -ohjelmisto - Hyödynnä 980 PRO:n teho Samsung Magician -ohjelmiston helppokäyttöisillä mutta edistyneillä optimointitoiminnoilla. Magicianin avulla voit tarkistaa levyn terveyden, optimoida suorituskyvyn, suojata arvokkaita tietoja ja saada tärkeitä päivityksiä. Siten varmistat, että SSD-levy säilyttää parhaan mahdollisen suorituskyvyn.',
+'Yleistä
+Laitteen tyyppi: Puolijohdeasema - sisäinen
+Muistin koko: 2 TB
+Laitteistosalaus: Kyllä
+Salausalgoritmi: AES 256 bittiä
+Koko tai muoto: M.2 2280
+Liitäntä: PCI Express 4.0 x4 (NVMe)
+Puskurin koko: 2 Gt
+Ominaisuudet: TRIM-tuki, unitila, Auto Garbage Collection Algorithm, TurboWrite Technology, Low Power DDR4 SDRAM Cache, NVM Express (NVMe) 1.3c, Samsung V-NAND 3bit MLC Technology, Samsung Elpis Controller, S.M.A.R.T.
+Leveys: 22.15 mm
+Syvyys: 80.15 mm
+Korkeus: 2.38 mm
+Paino: 9 g
+ 
+Suorituskyky
+Puolijohdeaseman kestokyky: 1200 TB
+Sisäinen tiedonsiirtonopeus: Jopa 7000 MBps (luku) / Jopa 5100 MBps (kirjoitus)
+4KB, QD1 Random Read: 22 000 IOPS
+4KB, QD1 Random Write: 60 000 IOPS
+Maximum 4KB Random Write: 1 000 000 IOPS
+4KB enimmäissatunnaistoisto: 1 000 000 IOPS
+ 
+Luotettavuus
+Keskimääräinen vikaväli (MTBF): 1,500,000 tuntia
+ 
+Laajennus & Liitäntä
+Liitännät: PCI Express 4.0 x4 (NVMe) - M.2 Card
+Yhteensopiva paikka: M.2 2280
+ 
+Virransyöttö
+Virrankulutus: 
+6.1 watt (keskimäärä)
+7.2 watt (maksimi)
+35 mW (joutokäynnillä)
+ 
+Ohjelmisto & Järjestelmävaatimukset
+Mukana tulevat ohjelmistot: Samsung Magician Software',
+'Tuotekoodi: MZ-V8P2T0BW
 EAN: 8806090696534', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Kingston 1TB NV2 SSD-levy', 89.90,'Edistyksellinen lisälaite ohuisiin kannettaviin tietokoneisiin ja muihin järjestelmiin
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Kingston 1TB NV2 SSD-levy', 89.90,'Edistyksellinen lisälaite ohuisiin kannettaviin tietokoneisiin ja muihin järjestelmiin
+
+Kingstonin NV2 PCIe 4.0 NVMe SSD on varteenotettava uuden sukupolven tallennusratkaisu, jossa on Gen 4x4 NVMe -ohjain. NV2:n luku- ja kirjoitusnopeudet ovat jopa 3 500 ja 2 800 Mt/s alhaisella virrantarpeella ja vähäisellä lämmöntuotolla, mikä auttaa optimoimaan järjestelmän toimintaa ja tuomaan lisäarvoa ilman kompromisseja.',
+'Edistyksellinen lisälaite ohuisiin kannettaviin tietokoneisiin ja muihin järjestelmiin
 
 Kingstonin NV2 PCIe 4.0 NVMe SSD on varteenotettava uuden sukupolven tallennusratkaisu, jossa on Gen 4x4 NVMe -ohjain. NV2:n luku- ja kirjoitusnopeudet ovat jopa 3 500 ja 2 800 Mt/s alhaisella virrantarpeella ja vähäisellä lämmöntuotolla, mikä auttaa optimoimaan järjestelmän toimintaa ja tuomaan lisäarvoa ilman kompromisseja. Kompakti toispuoleinen M.2 2280 -malli (22 x 80 mm) laajentaa tallennustilaa jopa 2 teratavuun samalla kun se jättää tilaa vapaaksi muille komponenteille. Näin NV2 on ihanteellinen valinta ohuisiin kannettaviin tietokoneisiin, pienikokoisiin järjestelmiin ja omatoimisten tietokoneharrastajien emolevyihin.
 
-Tuotetta on saatavilla 250 gigatavun - 2 teratavun kapasiteeteilla. Näin saadaan käyttöön kaikki tarvittava tila sovelluksille, asiakirjoille, valokuville, videoille ym. sisällölle.','Tuotekoodi: SNV2S/1000G
-EAN: 0740617329919', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Kingston 480GB A400 SSD-levy', 49.90,'Tekniset tiedot:
+Tuotetta on saatavilla 250 gigatavun - 2 teratavun kapasiteeteilla. Näin saadaan käyttöön kaikki tarvittava tila sovelluksille, asiakirjoille, valokuville, videoille ym. sisällölle.    
 
-Form Factor: 2.5"
+Ominaisuudet:                        
+
+Gen 4x4 NVMe PCIe -suorituskyky
+Ihanteellinen kannettaviin tietokoneisiin ja pienikokoisiin tietokonejärjestelmiin
+Kapasiteetti jopa 2 Tt',
+'Kapasiteetti: 1TB
+Nopeus: 3500 / 2100 Mt/s
+Käyttökestävyys (kirjoitetut teratavut): 320 Tt
+Virrankulutus: 1,2 W joutokäynti / 1,4 W keskim. / 2,2 W (maks.) luku / 5,0 W (maks.) kirjoitus
+Varastointilämpötila: -40 °C ~ 85 °C
+Käyttölämpötila-alue: 0°C ~ 70°C
+Värähtelyn kestävyys käyttötilassa: 2,17 G (7–800 Hz)
+Värähtelyn kestävyys lepotilassa: 20 G (20–1000 Hz)    
+MTBF: 1 500 000 h
+Mitat: 80 x 22 x 3,5 mm
+Nettopaino: 7 g',
+'Tuotekoodi: SNV2S/1000G
+EAN: 0740617329919', 2);
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Kingston 480GB A400 SSD-levy', 49.90,'Kingston A400 SSD-kovalevy on helppo ja erittäin edullinen tapa päivittää tietokoneen suorituskykyä. SSD-kovalevy on perinteistä HDD-kovalevyä nopeampi, hiljaisempi ja viileämpi. SSD-kovalevy ei sisällä liikkuvia osia, joten se on myös kestävämpi ja pitkäikäisempi.',
+'Kingston A400 SSD-kovalevy on helppo ja erittäin edullinen tapa päivittää tietokoneen suorituskykyä. SSD-kovalevy on perinteistä HDD-kovalevyä nopeampi, hiljaisempi ja viileämpi. SSD-kovalevy ei sisällä liikkuvia osia, joten se on myös kestävämpi ja pitkäikäisempi.
+
+Lukunopeus 500 Mt/s
+Kirjoitusnopeus 450 Mt/s
+2,5"
+SATA III (6 Gt/s) -väylään
+7 mm slim-kotelointi',
+'Form Factor: 2.5"
 Liitäntä: SATA Rev. 3.0 (6Gb/s) - taaksepäin yhteensopiva SATA Rev. 2.0 (3Gb/s)
 Kapasiteetti: 480GB
 Ohjain: 2Ch3
