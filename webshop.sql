@@ -17,7 +17,9 @@ create table tuotteet (
     nimi VARCHAR(100) NOT NULL,
     hinta DOUBLE (10,2) NOT NULL,
     kuva LONGBLOB,
-    tuotekuvaus VARCHAR(1555),
+    tuotekuvaus_lyhyt VARCHAR(555),
+    tuotekuvaus_pitka VARCHAR(1555),
+    tekniset_tiedot VARCHAR(1555),
     tuotekoodi VARCHAR(555),
     kategoria_id INT NOT NULL,
     index kategoria_id(kategoria_id),
@@ -25,36 +27,80 @@ create table tuotteet (
     ON DELETE RESTRICT
 );
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Asus GeForce RTX 3060 -näytönohjain, 12GB', 449.90, 
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Asus GeForce RTX 3060 -näytönohjain, 12GB', 449.90, 
 'ASUS Dual GeForce RTX™ 3060 tarjoaa uusimman NVIDIA Ampere -arkkitehtuurin puhtaimmassa muodossaan yhdistäen suorituskyvyn ja yksinkertaisuuden parhaalla tavalla. 
 Dual hyödyntää huipputason näytönohjaimien edistyneitä jäähdytysteknologioita. Siinä painotetaan tyylin sijaan sisältöä, joten se on täydellinen valinta tasapainoiseen kokoonpanoon. 
 Lähde mukaan nauttimaan huippuluokan pelitehosta.','Tuotekoodi: DUAL-RTX3060-O12G-V2
 EAN: 4711081309925',4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('MSI GeForce RTX 3060 -näytönohjain, 12GB', 549.90, 
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('MSI GeForce RTX 3060 -näytönohjain, 12GB', 549.90, 
 'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen 
 sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.',
 'Tuotekoodi: RTX-3060-VENTUS-2X-12G-OC
 EAN: 4719072793814', 4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('KFA2 GeForce RTX 4090 -näytönohjain, 24GB', 2479.90, 
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('KFA2 GeForce RTX 4090 -näytönohjain, 24GB', 2479.90, 
 'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan.
  Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. 
  Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin
   luoda ja nopeuttaa työnkulkuja.', 'Tuotekoodi: 49NXM5MD6DSK
 EAN: 4895147150055',4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Gigabyte GeForce RTX 3070 -näytönohjain, 8GB', 779.90, 
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Gigabyte GeForce RTX 3070 -näytönohjain, 8GB', 779.90, 
 'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – 
 NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan 
 ja huippuluokan tekoälytoiminnot.','Tuotekoodi: GV-N307TGAMING-8GD
 EAN: 4719331310974',4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Asus GeForce RTX 4090 -näytönohjain, 24GB', 2399.90, 
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Asus GeForce RTX 4090 -näytönohjain, 24GB', 2399.90, 
 'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan. 
 Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. 
 Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin 
 tapoihin luoda ja nopeuttaa työnkulkuja.', 'Tuotekoodi: TUF-RTX4090-O24G-GAMING
 EAN: 4711081936916', 4);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Asus TUF B550 ATX -emolevy', 179.90,'Tekniset tiedot:
-Prosessorituki:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Asus TUF B550 ATX -emolevy', 179.90,'Kestävä. vakaa. luotettava.
+TUF GAMING B550 PRO tislaa uusimman AMD-alustan olennaiset osat ja yhdistää ne pelivalmiisiin ominaisuuksiin ja todistettuun kestävyyteen. Tämä emolevy on suunniteltu sotilaskäyttöön tarkoitetuilla komponenteilla, päivitetyllä tehoratkaisulla ja kattavilla jäähdytysvaihtoehdoilla. Kun rakennat TUF Gaming -emolevyllä, hyödyt myös TUF Gaming Alliancesta - ASUS-yhteistyöstä luotettujen teollisuuskumppaneiden kanssa, mikä takaa helpomman rakentamisen, parhaan yhteensopivuuden ja täydentävän estetiikan komponenteista toiseen.', 'Kestävä. vakaa. luotettava.
+TUF GAMING B550 PRO tislaa uusimman AMD-alustan olennaiset osat ja yhdistää ne pelivalmiisiin ominaisuuksiin ja todistettuun kestävyyteen. Tämä emolevy on suunniteltu sotilaskäyttöön tarkoitetuilla komponenteilla, päivitetyllä tehoratkaisulla ja kattavilla jäähdytysvaihtoehdoilla. Kun rakennat TUF Gaming -emolevyllä, hyödyt myös TUF Gaming Alliancesta - ASUS-yhteistyöstä luotettujen teollisuuskumppaneiden kanssa, mikä takaa helpomman rakentamisen, parhaan yhteensopivuuden ja täydentävän estetiikan komponenteista toiseen.
+
+Vakaa suorituskyky:
+Päivitetyllä virransyötöllä ja kattavilla jäähdytysvaihtoehdoilla viimeisimpien AMD Ryzen -prosessorien polttoaineeksi sekä nopeamman muistin ja tallennustilan tueksi TUF Gaming B550 PRO on täydellinen perusta seuraavalle ydinsisällön taistelulaitteellesi.
+
+DrMOS:
+TUF Gaming B550 PRO: n sisäinen VRM hyödyntää 12 + 2 DrMOS-tehovaihetta, joissa yhdistyvät korkean ja matalan sivun MOSFETit ja ohjaimet yhdeksi paketiksi, mikä tuottaa AMD Ryzen ™ 5000 -sarjan / 4000 G-sarjan / 3000-sarjan prosessorien vaatiman tehon ja tehokkuuden. .
+
+Stack Cool 3+:
+2 unssin kuparikerrokset vetävät lämpöä pois kriittisistä komponenteista pitääkseen ne optimaalisissa käyttölämpötiloissaan ja antavat enemmän tilaa tilaa siirtää keskusyksiköt varastojen nopeuksiin.
+
+ProCool-liitäntä:
+Parannettu 8-nastainen + 4-nastainen liitin
+Erittäin kestävä
+Estä kuormittajat ja liitinvirheet
+
+Verrattuna perinteisiin virtalähteisiin, ProCool-pistorasiat on rakennettu tiukkojen vaatimusten mukaisesti, jotta varmistetaan tasainen kosketus virtalähteisiin. Tuloksena oleva matalampi impedanssi auttaa estämään kuormittajat ja liitinvirheet.
+
+Tuf-kuristimet:
+Sertifioidut sotilasluokan TUF-rikastimet tuottavat kalliota tasaista tehoa prosessorille, mikä parantaa järjestelmän vakautta.
+
+Tuf-kondensaattorit:
+Alkuperäiskondensaattorit tarjoavat jopa 20% paremman lämpötilatoleranssin ja viisi kertaa pidemmän käyttöiän.
+
+Digi + VRM:
+Integroitu Digi + VRM -jännitesäätömoduuli (VRM) on yksi alan hienoimmista, mikä takaa erittäin sujuvan ja erittäin puhtaan virransyötön prosessorille jatkuvasti.
+
+Helppo pc DIY:
+TUF Gaming -emolevyt on suunniteltu siten, että ne on helppo asentaa ja konfiguroida juuri haluamallasi tavalla - myös ensimmäistä kertaa rakentajille. TUF Gaming Alliance -ekosysteemi tekee yhteensopivien osien valinnasta helppoa, kun taas Armory Crate -ohjelmisto tarjoaa järjestelmän asetusten täydellisen hallinnan yhden kojelaudan kautta. TUF Gaming -emolevyt tarjoavat sinulle kaiken mitä tarvitset unelmiesi pelilaitteen rakentamiseen lisäämättä monimutkaisuutta.
+
+Rakenna luottavaisin mielin:
+TUF Gaming Alliance on ASUS: n ja luotettavien PC-komponenttimerkkien välinen yhteistyö, joka varmistaa yhteensopivuuden useiden osien kanssa, kuten PC-kotelot, virtalähteet, suorittimen jäähdyttimet, muistisarjat ja paljon muuta. Kun lisää kumppanuuksia ja komponentteja lisätään säännöllisesti, TUF Gaming Alliance kasvaa edelleen. Lisätietoja
+
+Mukaansatempaava pelaaminen:
+TUF Gaming B550 PRO tarjoaa täydellisen, korkean suorituskyvyn pelipaketin, jolla on pitkä luettelo ominaisuuksista, jotka parantavat kokemustasi, mukaan lukien huippunopea verkkoyhteys sujuvampaan online-pelaamiseen, koskematon ääni FPS-pelaamiseen tarkoitetuilla paikannusmerkeillä ja sisäinen RGB-valaistus, joka synkronoituu liitettyjen lisävarusteiden kanssa auttaa luomaan henkilökohtaisen pelitunnelman.
+
+Ainutlaatuinen 2,5 gigabitin ethernet:
+2,5 G: n sisäinen Ethernet-kaapeli nostaa lähiverkkoyhteytesi loveen jopa 2,5-kertaisella kaistanleveydellä. Olemassa olevan LAN-kaapelin avulla voit hyödyntää tätä verkkopäivitystä saadaksesi sujuvamman, viiveettömän pelaamisen, suoratoista korkean resoluution videoita ja nauttia nopeammista tiedostojen siirroista.
+
+Turbo LAN:
+Verkkooptimointiohjelmisto muokattavaan pakettien priorisointiin:
+Turbo LAN on verkon optimointiohjelmisto räätälöitäviin pakettien priorisointiin. CFosSpeed-liikenteen muotoilutekniikan avulla voit määrittää sovelluksen prioriteetin intuitiivisen käyttöliittymän kautta ja vähentää verkon viivettä.', 
+
+'Prosessorituki:
 3. sukupolven AMD Ryzen -prosessorit
 AM4
 
@@ -75,9 +121,17 @@ Verkkokortti:
 WLAN & Bluetooth:
 M.2 slot (Key E)', 'Tuotekoodi: TUF-GAMING-B550-PLUS
 EAN: 4718017749435', 1);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Asus ROG B550 ATX -emolevy', 219.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Asus ROG B550 ATX -emolevy', 219.90,'Asus ROG STRIX B550-F GAMING on 
+AMD B550 -piirisarjalla varustettu AM4-kantainen emolevy 3. sukupolven AMD Ryzen prosessoreille. 
+Emolevy tukee myös BIOS-päivityksellä tulevan sukupolven AMD Ryzen prosessoreita. 
+B550 piirisarjan PCIe 4.0 -tuki tarjoaa tarvittavan kaistan huippunopeille SSD-levyille ja seuraavan sukupolven näytönohjaimille!', 
 
-Prosessorituki:
+'Asus ROG STRIX B550-F GAMING on 
+AMD B550 -piirisarjalla varustettu AM4-kantainen emolevy 3. sukupolven AMD Ryzen prosessoreille. 
+Emolevy tukee myös BIOS-päivityksellä tulevan sukupolven AMD Ryzen prosessoreita. 
+B550 piirisarjan PCIe 4.0 -tuki tarjoaa tarvittavan kaistan huippunopeille SSD-levyille ja seuraavan sukupolven näytönohjaimille!',
+
+'Prosessorituki:
 3. sukupolven AMD Ryzen -prosessorit
 AM4
 
@@ -96,9 +150,14 @@ Verkkokortti:
 1 x Intel® I225-V 2.5Gb Ethernet
 ', 'Tuotekoodi: ROG-STRIX-B550-F-GAMING
 EAN: 4718017749688', 1);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Asus PRIME B660 ATX -emolevy', 169.90,'Tekniset tiedot:
-
-Prosessorituki:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Asus PRIME B660 ATX -emolevy', 169.90,'Asus PRIME B660-PLUS 
+D4 on Intel B660 -piirisarjalla varustettu Intel LGA 1700-kantainen emolevy 12. sukupolven Intel prosessoreille.
+PRIME B660 sarjan emolevyt tarjoavat tärkeimmät ominaisuudet laadukkaan kokoonpanon kokoamiseen edulliseen hintaan. 
+PRIME-emolevyt soveltuvat hyvin peli- ja työkäyttöön tarjoten laadukkaan virransyötön myös tehokkaimmille Intel Core-prosessoreille.','Asus PRIME B660-PLUS 
+D4 on Intel B660 -piirisarjalla varustettu Intel LGA 1700-kantainen emolevy 12. sukupolven Intel prosessoreille.
+PRIME B660 sarjan emolevyt tarjoavat tärkeimmät ominaisuudet laadukkaan kokoonpanon kokoamiseen edulliseen hintaan. 
+PRIME-emolevyt soveltuvat hyvin peli- ja työkäyttöön tarjoten laadukkaan virransyötön myös tehokkaimmille Intel Core-prosessoreille.',
+'Prosessorituki:
 LGA1700 kanta
 Tukee 12. sukupolven Intel Core, Pentium Gold ja Celeron -prosessoreja
 
@@ -120,9 +179,13 @@ WLAN & Bluetooth:
 M.2 slot only
 ', 'Tuotekoodi: PRIME-B660-PLUS-D4
 EAN: 4711081523017', 1);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('MSI PRO Z690 ATX -emolevy', 219.90,'Tekniset tiedot:
-
-Prosessorituki:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('MSI PRO Z690 ATX -emolevy', 219.90,'MSI PRO Z690-A DDR4 
+on suunniteltu tarjoamaan uskomaton suorituskyky hintaan verrattuna. Emolevy käyttää 12. sukupolven Intel® Core™ -prosessoreita ja tukee jopa 128 Gt DDR4-RAM-muistia.
+Tehokas ja viileä samaan aikaan. Emolevy on suunniteltu suurilla jäähdytyselementeillä, jotka mahdollistavat 12. sukupolven Intel® Core™ -prosessoreiden käytön täydellä teholla. 
+Emolevyn rakenne on optimoitu kuljettamaan raskasta mutta silti tasaista virtaa koko emolevyn läpi, jotta voit nauttia tietokoneesta sillä tavalla kuin se on tarkoitettu.','MSI PRO Z690-A DDR4 
+on suunniteltu tarjoamaan uskomaton suorituskyky hintaan verrattuna. Emolevy käyttää 12. sukupolven Intel® Core™ -prosessoreita ja tukee jopa 128 Gt DDR4-RAM-muistia.
+Tehokas ja viileä samaan aikaan. Emolevy on suunniteltu suurilla jäähdytyselementeillä, jotka mahdollistavat 12. sukupolven Intel® Core™ -prosessoreiden käytön täydellä teholla. 
+Emolevyn rakenne on optimoitu kuljettamaan raskasta mutta silti tasaista virtaa koko emolevyn läpi, jotta voit nauttia tietokoneesta sillä tavalla kuin se on tarkoitettu.','Prosessorituki:
 LGA1700 kanta
 Tukee 12. sukupolven Intel Core, Pentium Gold ja Celeron -prosessoreja
 
@@ -145,9 +208,17 @@ Realtek® ALC897 Codec
 Verkkokortti:
 1x Intel® L225V 2.5Gbps LAN controller', 'Tuotekoodi: PRO-Z690-A-DDR4
 EAN: 4719072886622', 1);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Asus TUF B650 ATX -emolevy', 279.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Asus TUF B650 ATX -emolevy', 279.90,'ASUS TUF GAMING B650M-PLUS 
+on AM5-kantainen mATX -peliemolevy Ryzen 7000-sarjan prosessoreille, jossa on PCIe 5.0 M.2-tuki, kaksi M.2-liitäntää, 2,5 Gb LAN, DDR5-muistituki, 12+2 tehoporrasta ja 
+runsaasti liitäntöjä erilaisiin tarpeisiin, unohtamatta Asus Aura Sync RGB-tukea.','ASUS TUF GAMING B650M-PLUS on AM5-kantainen mATX -peliemolevy Ryzen 7000-sarjan prosessoreille, 
+jossa on PCIe 5.0 M.2-tuki, kaksi M.2-liitäntää, 2,5 Gb LAN, DDR5-muistituki, 12+2 tehoporrasta ja runsaasti liitäntöjä erilaisiin tarpeisiin, unohtamatta Asus Aura Sync RGB-tukea.
 
-Prosessorituki:
+ASUS TUF GAMING B650M-PLUS WIFI sisältää kaikki uusimpien AMD Ryzen 7000 -sarjan prosessoreiden olennaiset elementit ja yhdistää ne pelikäyttöön soveltuviin ominaisuuksiin 
+ja todistettuun kestävyyteen. Tämä emolevy on suunniteltu sotilasluokan komponenteilla, päivitetyllä virtaratkaisulla ja kattavalla jäähdytysjärjestelmällä, 
+ja se ylittää odotukset maratonpeleissä kivikovalla ja vakaalla suorituskyvyllä. TUF GAMING -emolevyille tehdään myös tiukat kestävyystestit, 
+joilla varmistetaan, että ne kestävät olosuhteet, joissa muut saattavat epäonnistua. Esteettisesti tässä mallissa on käytetty mustia ja geometrisiä muotoiluelementtejä, 
+jotka kuvastavat TUF GAMING -sarjalle ominaista luotettavuutta ja vakautta.',
+'Prosessorituki:
 AMD AM5 -kanta
 Tukee AMD Ryzen 7000 -sarjan työpöytäprosessoreja
 
@@ -166,7 +237,7 @@ Verkkokortti:
 1 x Realtek 2.5Gb Ethernet', 'Tuotekoodi: TUF-GAMING-B650-PLUS
 EAN: 4711081912767', 1);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 7 5800X3D', 459.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 7 5800X3D', 459.90,'Tekniset tiedot:
 
 Malli: Ryzen 7 5800X3D
 Ydinten määrä: 8
@@ -191,7 +262,7 @@ AMD StoreMI Technology
 AMD "Zen 3" Core Architecture
 AMD Ryzen™ VR-Ready Premium', 'Tuotekoodi: 100-100000651WOF
 EAN: 0730143313797',5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 5 5600X', 209.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 5 5600X', 209.90,'Tekniset tiedot:
 
 Malli: Ryzen 5 5600
 Ydinten määrä: 6
@@ -217,7 +288,7 @@ AMD StoreMI Technology
 AMD "Zen 3" Core Architecture
 AMD Ryzen™ VR-Ready Premium', 'Tuotekoodi: 100-100000927BOX
 EAN: 0730143314190', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 5 7600X', 319.90,'Puhdasta pelisuorituskykyä - hanki 6-ytiminen prosessori, joka on suunniteltu intensiiviseen pelitoimintaan!
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 5 7600X', 319.90,'Puhdasta pelisuorituskykyä - hanki 6-ytiminen prosessori, joka on suunniteltu intensiiviseen pelitoimintaan!
 
 Tekniset tiedot:
 
@@ -259,7 +330,7 @@ Tuetut teknologiat:
 AMD EXPO™ Technology
 AMD Ryzen™ Technologies', 'Tuotekoodi: 100-100000593WOF
 EAN: 0730143314442', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Intel Core i7-13700K', 569.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Intel Core i7-13700K', 569.90,'Tekniset tiedot:
 
 Malli: Core i7-13700K
 Ydinten määrä: 16 (8P + 8E)
@@ -285,7 +356,7 @@ Maksimi muistinopeus: DDR5 5600 / DDR4 3200 MT/s
 Muistikanavat: 2
 Maksimi muistikapasiteetti: 128 GB', 'Tuotekoodi: BX8071513700K
 EAN: 5032037258708', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Intel Core i5-13600K', 429.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Intel Core i5-13600K', 429.90,'Tekniset tiedot:
 
 Malli: Core i5-13600K
 Ydinten määrä: 14 (6P + 8E)
@@ -311,7 +382,7 @@ Muistikanavat: 2
 Maksimi muistikapasiteetti: 128 GB', 'Tuotekoodi: BX8071513600K
 EAN: 5032037258746', 5);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Kingston 16GB Fury Beast', 73.90, 'Ominaisuudet:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Kingston 16GB Fury Beast', 73.90, 'Ominaisuudet:
 
 Matalaprofiilinen lämmönlevittimen design
 Kustannustehokas ja suorituskykyinen DDR4-päivitys
@@ -327,7 +398,7 @@ Latenssi: CL16 (16-18-18)
 Jännite: 1.35 V
 Rank: Single Rank (1R)', 'Tuotekoodi: KF432C16BBK2/16
 EAN: 0740617319903', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Kingston 32GB Fury Renegade', 159.90, 'Ominaisuudet:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Kingston 32GB Fury Renegade', 159.90, 'Ominaisuudet:
 
 Korkeat nopeudet ja matalat latenssit toimittavat äärimmäistä suorituskykyä
 Intel XMP-profiilit optimoituja Intelin tuoreimmille piirisarjoille
@@ -342,7 +413,7 @@ Latenssi: CL16 (16-20-20)
 Jännite: 1.35 V
 Rank: Dual Rank (2R)', 'Tuotekoodi: KF436C16RB1K2/32
 EAN: 0740617322514', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Corsair 16GB Vengeance', 79.90, 'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Corsair 16GB Vengeance', 79.90, 'Tekniset tiedot:
 
 Kapasiteetti: 16GB (2 x 8GB)
 Muistityyppi: DDR4 DIMM 288-pin
@@ -357,7 +428,7 @@ SPD nopeus: 2133 MHz
 SPD latenssi: 15-15-15-36
 SPD jännite: 1.20 V', 'Tuotekoodi: CMK16GX4M2D3600C18
 EAN: 0840006612971', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Corsair 32GB Vengeance', 129.90, 'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Corsair 32GB Vengeance', 129.90, 'Tekniset tiedot:
 
 Kapasiteetti: 32GB (2 x 16GB)
 Muistityyppi: DDR4 DIMM 288-pin
@@ -371,7 +442,7 @@ SPD nopeus: 2666 MHz
 SPD latenssi: 18-18-18-43
 SPD jännite: 1.20 V', 'Tuotekoodi: CMK32GX4M2Z3600C18
 EAN: 0840006620990', 3);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('G.Skill 16GB Ripjaws V', 68.90, 'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('G.Skill 16GB Ripjaws V', 68.90, 'Tekniset tiedot:
 
 Malli: Ripjaws V
 Tyyppi: DDR4
@@ -387,7 +458,7 @@ Takuu: Elinikäinen
 Ominaisuudet: Intel XMP 2.0 (Extreme Memory Profile) Ready', 'Tuotekoodi: F4-3200C16D-16GVKB
 EAN: 4719692004970', 3);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB 980 SSD-levy', 114.90,'Päivitä NVMe:n huippunopeuksiin
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB 980 SSD-levy', 114.90,'Päivitä NVMe:n huippunopeuksiin
 On aika ottaa kaikki irti tietokoneesi potentiaalista 980-mallin avulla. Riippumatta siitä tarvitsetko lisää sujuvuutta pelaamiseen vai tehoa vaativan grafiikan käsittelyyn työtehtävissäsi, 980 on erinomainen valinta. Se tarjoaa luokkansa parasta SSD-suorituskykyä, joka perustuu NVMe- ja PCIe 3.0 -tekniikkaan.
 
 Salamannopea
@@ -395,7 +466,7 @@ Täyttä vauhtia eteenpäin. 980 hyödyntää PCIe 3.0 -väylän tarjoamia nopeu
 Rakenne ei sisällä DRAM-muistia ja levy tarjoaa erinomaista vastinetta rahoille sillä sen sekventiaaliset luku-/kirjoitusnopeudet ovat jopa 3 500/3 000 Mt/s* –
 yli 6,2 kertaa nopeampia kuin SATA SSD -levyillä.', 'Tuotekoodi: MZ-V8V1T0BW
 EAN: 8806090572210', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB PRO 980 SSD-levy', 134.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB PRO 980 SSD-levy', 134.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
 
 Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.
 
@@ -403,7 +474,7 @@ Enimmäisnopeus - 980 PRO:ssa on Samsungin oma Elpis Controller, joka varmistaa 
 Lukunopeus on jopa 7 000 Mt/s, mikä on kaksi kertaa nopeampi kuin PCIe 3.0 SSD -levyillä ja 12,7 kertaa nopeampi kuin SATA SSD  levyillä. 
 980 PRO saavuttaa enimmäisnopeuden PCIe 4.0 -liitännällä ja nopeus voi vaihdella muissa ympäristöissä.', 'Tuotekoodi: MZ-V8P1T0BW
 EAN: 8806090295546', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Samsung 2TB PRO 980 SSD-levy', 269.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, 
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Samsung 2TB PRO 980 SSD-levy', 269.90,'Samsung PCIe 4.0 NVMe SSD 980 PRO antaa tehoa, 
 jolla viet tietokoneen käytön seuraavalle tasolle. 980 PRO:n PCIe 4.0 -liitäntä merkitsee kaksinkertaista tiedonsiirtonopeutta PCIe 3.0 -liitäntään verrattuna.
 
 Taaksepäin yhteensopivuus PCIe 3.0:n kanssa lisää käyttömahdollisuuksia.
@@ -412,13 +483,13 @@ Enimmäisnopeus - 980 PRO:ssa on Samsungin oma Elpis Controller, joka varmistaa 
 mikä on kaksi kertaa nopeampi kuin PCIe 3.0 SSD -levyillä ja 12,7 kertaa nopeampi kuin SATA SSD  levyillä. 980 PRO saavuttaa enimmäisnopeuden PCIe 4.0 -liitännällä 
 ja nopeus voi vaihdella muissa ympäristöissä.', 'Tuotekoodi: MZ-V8P2T0BW
 EAN: 8806090696534', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Kingston 1TB NV2 SSD-levy', 89.90,'Edistyksellinen lisälaite ohuisiin kannettaviin tietokoneisiin ja muihin järjestelmiin
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Kingston 1TB NV2 SSD-levy', 89.90,'Edistyksellinen lisälaite ohuisiin kannettaviin tietokoneisiin ja muihin järjestelmiin
 
 Kingstonin NV2 PCIe 4.0 NVMe SSD on varteenotettava uuden sukupolven tallennusratkaisu, jossa on Gen 4x4 NVMe -ohjain. NV2:n luku- ja kirjoitusnopeudet ovat jopa 3 500 ja 2 800 Mt/s alhaisella virrantarpeella ja vähäisellä lämmöntuotolla, mikä auttaa optimoimaan järjestelmän toimintaa ja tuomaan lisäarvoa ilman kompromisseja. Kompakti toispuoleinen M.2 2280 -malli (22 x 80 mm) laajentaa tallennustilaa jopa 2 teratavuun samalla kun se jättää tilaa vapaaksi muille komponenteille. Näin NV2 on ihanteellinen valinta ohuisiin kannettaviin tietokoneisiin, pienikokoisiin järjestelmiin ja omatoimisten tietokoneharrastajien emolevyihin.
 
 Tuotetta on saatavilla 250 gigatavun - 2 teratavun kapasiteeteilla. Näin saadaan käyttöön kaikki tarvittava tila sovelluksille, asiakirjoille, valokuville, videoille ym. sisällölle.','Tuotekoodi: SNV2S/1000G
 EAN: 0740617329919', 2);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus, tuotekoodi, kategoria_id) VALUES ('Kingston 480GB A400 SSD-levy', 49.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Kingston 480GB A400 SSD-levy', 49.90,'Tekniset tiedot:
 
 Form Factor: 2.5"
 Liitäntä: SATA Rev. 3.0 (6Gb/s) - taaksepäin yhteensopiva SATA Rev. 2.0 (3Gb/s)
