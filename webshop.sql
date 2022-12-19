@@ -948,7 +948,11 @@ Elinikäodotus: 1 000 000 h
 Total Bytes Written (TBW): 160TB', 'Tuotekoodi: SA400S37/480G
 EAN: 0740617263442', 2);
 
-
+create table kayttaja (
+    id int primary key auto_increment,
+    käyttäjänimi varchar(250) not null,
+    salasana varchar(250) not null
+);
 
 create table asiakas (
     id int primary key auto_increment,
