@@ -26,34 +26,267 @@ create table tuotteet (
     FOREIGN KEY (kategoria_id) REFERENCES tuotekategoriat(id)
     ON DELETE RESTRICT
 );
-
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Asus GeForce RTX 3060 -näytönohjain, 12GB', 449.90, 
+/*Näytönohjaimet*/
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Asus GeForce RTX 3060 -näytönohjain, 12GB', 449.90, 
 'ASUS Dual GeForce RTX™ 3060 tarjoaa uusimman NVIDIA Ampere -arkkitehtuurin puhtaimmassa muodossaan yhdistäen suorituskyvyn ja yksinkertaisuuden parhaalla tavalla. 
 Dual hyödyntää huipputason näytönohjaimien edistyneitä jäähdytysteknologioita. Siinä painotetaan tyylin sijaan sisältöä, joten se on täydellinen valinta tasapainoiseen kokoonpanoon. 
-Lähde mukaan nauttimaan huippuluokan pelitehosta.','Tuotekoodi: DUAL-RTX3060-O12G-V2
+Lähde mukaan nauttimaan huippuluokan pelitehosta.','Tuplasti tuulettimia. Tuplasti hauskempaa. 
+ASUS Dual GeForce RTX™ 3060 tarjoaa uusimman NVIDIA Ampere -arkkitehtuurin puhtaimmassa muodossaan yhdistäen suorituskyvyn ja yksinkertaisuuden parhaalla tavalla. Dual hyödyntää huipputason näytönohjaimien edistyneitä jäähdytysteknologioita. Siinä painotetaan tyylin sijaan sisältöä, joten se on täydellinen valinta tasapainoiseen kokoonpanoon. Lähde mukaan nauttimaan huippuluokan pelitehosta. 
+
+GeForce RTX 30 -sarja - The Ultimate Play
+GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.
+
+Reaaliaikaisen säteenseurannan tinkimättömän kuvanlaadun ja tekoälyn vauhdittaman DLSS:n äärimmäisen suorituskyvyn ansiosta voit kokea suosituimmat nykyiset hittipelit aivan uudella tasolla. RTX. It’s On.
+
+DLSS:n tekoälykiihdytys. - Maksimaalinen FPS-nopeus. Maksimilaatu. Tekoälyn voimalla.
+NVIDIA DLSS on mullistava tekoälyrenderöintitekniikka, joka nostaa freiminopeudet vähintään 1,5-kertaisiksi kuvanlaadusta tinkimättä hyödyntämällä GeForce RTX:n erityisesti tekoälylle varattuja Tensor-ytimiä. Se varmistaa suorituskyvyn, joka antaa varaa virittää asetukset huippuunsa ja nostaa resoluution uskomattoman visuaalisen kokemuksen antavalle tasolle. Tekoäly mullistaa pelaamisen.
+
+Voitto on kiinni millisekunneista
+NVIDIA Reflex antaa äärimmäisen kilpailuedun. Alhaisin latenssi. Erinomaiset vasteajat. GeForce RTX 30 -sarjan grafiikkasuorittimien ja NVIDIA® G-SYNC® -pelinäyttöjen teholla. Mullistava teknologiapaketti mittaa ja optimoi järjestelmän latenssin kilpapelejä varten, jotta saat kohteet tähtäimeen nopeasti, pystyt reagoimaan nopeammin ja voit parantaa tähtäystarkkuuttasi.
+
+Lisätehoa luovaan työhösi
+GeForce RTX 30 -sarjan grafiikkasuorittimet nostavat luovat projektisi aivan uudelle tasolle. Tekoälykiihdytys suosittuihin luovan työn sovelluksiin. NVIDIA Studio -järjestelmän erilliset ohjaimet ja eksklusiiviset työkalut. Suunniteltu rikkomaan suorituskykyennätykset. Haluatpa sitten renderöidä monimutkaisia 3D-kohtauksia, muokata 8K-videokuvaa tai livestriimata parhaalla koodaustasolla ja kuvanlaadulla, GeForce RTX -grafiikkasuorittimet antavat käyttöösi työsi tarvitseman tehon.
+
+Striimaa taiturimaisesti
+Tee livestriimeissäsi vaikutus vakuuttavalla grafiikalla ja sulavalla ja nykimättömällä kuvalla. Uuden sukupolven yhdistetty laitteistopohjainen koodaus ja koodauksen purku auttavat esittelemään parhaat pelihetkesi uskomattoman yksityiskohtaisesti. Upouusi NVIDIAN pelikuvan lähetyssovellus nostaa livestriimisi aivan uudelle tasolla tehokkailla tekoälytoiminnoilla, jotka parantavat äänen ja videokuvan laatua virtuaalitaustan, verkkokameran automaattikehysten ja mikrofonin taustamelun poiston kaltaisilla tehosteilla. GeForce RTX 30 -sarjan grafiikkasuorittimien suorituskyky ja kuvanlaatu varmistavat, että yleisösi pääsee aina nauttimaan erinomaisesta kuvanlaadusta.
+
+DirectX 12 Ultimate
+Kehittäjät voivat nyt lisätä mahtavia grafiikkatehosteita Microsoft Windows -pohjaisiin PC-peleihin. GeForce RTX -näytönohjaimissa on kehittyneet DX12-ominaisuudet, kuten säteenseuranta ja VSR (Variable Rate Shading), jotka herättävät pelit eloon ultrarealistisilla visuaalisilla tehosteilla ja suurilla freiminopeuksilla.
+
+Muut ominaisuudet ja edut:
+Virtuaalitodellisuus
+Paras grafiikkateho takaa sulavat ja mukaansa tempaavat VR-kokemukset.
+
+NVIDIA G-SYNC
+Pelaa sulavalla ja repeytymättömällä kuvalla jopa 360 Hz:n virkistystaajuudella ja HDR-tarkkuudella. Tämä on vannoutuneiden pelaajien äärimmäinen pelinäyttö ja luottolaitteisto.
+','GPU
+GPU: NVIDIA GeForce RTX 3060
+CUDA coret: 3584
+Kellotaajuus:
+
+OC Mode: 1867 MHz (Boost Clock)
+Gaming Mode: 1837 MHz (Boost Clock)
+Muisti
+Määrä: 12GB GDDR6
+Muistiväylä: 192-bit
+Kellotaajuus: 15 Gbps
+
+Liitännät
+
+1 x HDMI 2.1
+3 x DisplayPort 1.4a
+Muuta
+Väylä: PCI-E 4.0 x16
+Mitat: 200 x 123 x 38 mm / 2-slot
+Paino: 0,546 kg
+Suositeltu virtalähteen koko: 650W
+Virtaliitännät: 1 x 8-pin','Tuotekoodi: DUAL-RTX3060-O12G-V2
 EAN: 4711081309925',4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('MSI GeForce RTX 3060 -näytönohjain, 12GB', 549.90, 
+
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('MSI GeForce RTX 3060 -näytönohjain, 12GB', 549.90, 
 'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen 
 sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.',
+'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.
+
+Reaaliaikaisen säteenseurannan tinkimättömän kuvanlaadun ja tekoälyn vauhdittaman DLSS:n äärimmäisen suorituskyvyn ansiosta voit kokea suosituimmat nykyiset hittipelit aivan uudella tasolla. RTX. It’s On.
+
+DLSS:n tekoälykiihdytys. - Maksimaalinen FPS-nopeus. Maksimilaatu. Tekoälyn voimalla.
+NVIDIA DLSS on mullistava tekoälyrenderöintitekniikka, joka nostaa freiminopeudet vähintään 1,5-kertaisiksi kuvanlaadusta tinkimättä hyödyntämällä GeForce RTX:n erityisesti tekoälylle varattuja Tensor-ytimiä. Se varmistaa suorituskyvyn, joka antaa varaa virittää asetukset huippuunsa ja nostaa resoluution uskomattoman visuaalisen kokemuksen antavalle tasolle. Tekoäly mullistaa pelaamisen.
+
+Voitto on kiinni millisekunneista
+NVIDIA Reflex antaa äärimmäisen kilpailuedun. Alhaisin latenssi. Erinomaiset vasteajat. GeForce RTX 30 -sarjan grafiikkasuorittimien ja NVIDIA® G-SYNC® -pelinäyttöjen teholla. Mullistava teknologiapaketti mittaa ja optimoi järjestelmän latenssin kilpapelejä varten, jotta saat kohteet tähtäimeen nopeasti, pystyt reagoimaan nopeammin ja voit parantaa tähtäystarkkuuttasi.
+
+Lisätehoa luovaan työhösi
+GeForce RTX 30 -sarjan grafiikkasuorittimet nostavat luovat projektisi aivan uudelle tasolle. Tekoälykiihdytys suosittuihin luovan työn sovelluksiin. NVIDIA Studio -järjestelmän erilliset ohjaimet ja eksklusiiviset työkalut. Suunniteltu rikkomaan suorituskykyennätykset. Haluatpa sitten renderöidä monimutkaisia 3D-kohtauksia, muokata 8K-videokuvaa tai livestriimata parhaalla koodaustasolla ja kuvanlaadulla, GeForce RTX -grafiikkasuorittimet antavat käyttöösi työsi tarvitseman tehon.
+
+Striimaa taiturimaisesti
+Tee livestriimeissäsi vaikutus vakuuttavalla grafiikalla ja sulavalla ja nykimättömällä kuvalla. Uuden sukupolven yhdistetty laitteistopohjainen koodaus ja koodauksen purku auttavat esittelemään parhaat pelihetkesi uskomattoman yksityiskohtaisesti. Upouusi NVIDIAN pelikuvan lähetyssovellus nostaa livestriimisi aivan uudelle tasolla tehokkailla tekoälytoiminnoilla, jotka parantavat äänen ja videokuvan laatua virtuaalitaustan, verkkokameran automaattikehysten ja mikrofonin taustamelun poiston kaltaisilla tehosteilla. GeForce RTX 30 -sarjan grafiikkasuorittimien suorituskyky ja kuvanlaatu varmistavat, että yleisösi pääsee aina nauttimaan erinomaisesta kuvanlaadusta.
+
+DirectX 12 Ultimate
+Kehittäjät voivat nyt lisätä mahtavia grafiikkatehosteita Microsoft Windows -pohjaisiin PC-peleihin. GeForce RTX -näytönohjaimissa on kehittyneet DX12-ominaisuudet, kuten säteenseuranta ja VSR (Variable Rate Shading), jotka herättävät pelit eloon ultrarealistisilla visuaalisilla tehosteilla ja suurilla freiminopeuksilla.
+
+Muut ominaisuudet ja edut:
+Virtuaalitodellisuus
+Paras grafiikkateho takaa sulavat ja mukaansa tempaavat VR-kokemukset.
+
+NVIDIA G-SYNC
+Pelaa sulavalla ja repeytymättömällä kuvalla jopa 360 Hz:n virkistystaajuudella ja HDR-tarkkuudella. Tämä on vannoutuneiden pelaajien äärimmäinen pelinäyttö ja luottolaitteisto.','GPU
+GPU: NVIDIA GeForce RTX 3060
+CUDA coret: 3584
+Kellotaajuus: 1807 MHz (Boost)
+
+Muisti
+Määrä: 12GB GDDR6
+Muistiväylä: 192-bit
+Nopeus: 15 Gbps
+
+Liitännät
+
+3 x DisplayPort (v1.4a)
+1 x HDMI (tukee 4K @ 120Hz)
+Muuta
+Väylä: PCI Express Gen 4
+Mitat: 235 x 124 x 42 mm
+Paino: 675g
+Suositeltu virtalähteen koko: 550W
+Virtaliitännät: 1 x 8-pin',
 'Tuotekoodi: RTX-3060-VENTUS-2X-12G-OC
 EAN: 4719072793814', 4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('KFA2 GeForce RTX 4090 -näytönohjain, 24GB', 2479.90, 
-'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan.
- Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. 
- Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin
-  luoda ja nopeuttaa työnkulkuja.', 'Tuotekoodi: 49NXM5MD6DSK
-EAN: 4895147150055',4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Gigabyte GeForce RTX 3070 -näytönohjain, 8GB', 779.90, 
-'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – 
-NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan 
-ja huippuluokan tekoälytoiminnot.','Tuotekoodi: GV-N307TGAMING-8GD
-EAN: 4719331310974',4);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Asus GeForce RTX 4090 -näytönohjain, 24GB', 2399.90, 
+
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Asus GeForce RTX 4090 -näytönohjain, 24GB', 2399.90, 
 'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan. 
 Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. 
 Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin 
-tapoihin luoda ja nopeuttaa työnkulkuja.', 'Tuotekoodi: TUF-RTX4090-O24G-GAMING
+tapoihin luoda ja nopeuttaa työnkulkuja.', 
+'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan. Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin luoda ja nopeuttaa työnkulkuja.
+
+NVIDIA Ada Lovelace -arkkitehtuuri
+Edellä aikaansa, etumatkaa peleihin.
+
+Uudet SM-moniprosessorit
+Jopa kaksinkertainen suorituskyky ja energiatehokkuus
+Neljännen sukupolven Tensor-ytimet
+Jopa kaksinkertainen tekoälyn suorituskyky
+Kolmannen sukupolven RT-ytimet
+Jopa kaksinkertainen säteenseurannan suorituskyky
+Säteenseuranta
+Hyperrealistista. Hypernopeasti.
+Ada-arkkitehtuuri päästää valon käyttäytymistä oikeassa maailmassa simuloivan säteenseurannan täyteen loistoonsa. RTX 40 -sarjan ja kolmannen sukupolven RT-ytimien tehon ansiosta pääset kokemaan virtuaalimaailmat tarkempina kuin koskaan aiemmin.
+
+NVIDIA DLSS 3
+Tekoälyllä lisää kerrointa suorituskykyyn.
+DLSS on mullistava läpimurto grafiikan tekoälytehostuksessa, sillä se parantaa suorituskykyä massiivisesti. DLSS 3 luo kuvaan korkealaatuisia lisäfreimejä tekoälyn avulla hyödyntämällä GeForce RTX 40 -sarjan grafiikkasuorittimien uusien neljännen sukupolven Tensor-ytimien ja Optical Flow Accelerator -kiihdyttimen tehoa.
+
+NVIDIA Reflex
+Voitto on kiinni millisekunneista.
+NVIDIA Reflex ja GeForce RTX 40 -sarjan grafiikkasuorittimet varmistavat alhaisimman latenssin ja parhaat vasteajat, mikä on voittoisa yhdistelmä peleissä. Reflex on järjestelmän latenssin optimointiin ja mittaamiseen suunniteltu teknologia, joka auttaa nopeuttamaan kohteen saamista tähtäimeen, reaktioaikoja ja tähtäyksen tarkkuutta',
+'GPU
+GPU: NVIDIA GeForce RTX 4090
+CUDA coret: 16384
+Kellotaajuus:
+
+OC mode: 2595 MHz (Boost Clock)
+Gaming mode: 2565 MHz (Boost Clock)
+Muisti
+Määrä: 24GB GDDR6X
+Muistiväylä: 384-bit
+Nopeus: 21 Gbps
+
+Liitännät
+
+2 x HDMI 2.1a
+3 x DisplayPort 1.4a
+Muuta
+Väylä: PCIE 4.0
+Mitat: 348,2 x 150 x 72,6mm / 3.65 slot
+Paino: 2,344kg
+OpenGL: Open GL 4.6
+HDCP-tuki: HDCP 2.3
+Digitaalinen maksimiresoluutio: 7680 x 4320
+Suositeltu virtalähteen koko: 850W
+Virtaliitännät: 1 x 16-pin (16-pin virta-adapteri tuotepakkauksessa)',
+'Tuotekoodi: TUF-RTX4090-O24G-GAMING
 EAN: 4711081936916', 4);
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('KFA2 GeForce RTX 4090 -näytönohjain, 24GB', 2479.90, 
+'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan.
+ Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. 
+ Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin
+luoda ja nopeuttaa työnkulkuja.', 
+'NVIDIA® GeForce RTX® 40 -sarjan grafiikkasuorittimet tarjoavat pelaajille ja luovan työntekijöille paljon muutakin kuin huippunopean grafiikan. Niiden teho on peräisin ultratehokkaasta NVIDIA Ada Lovelace -arkkitehtuurista, joka edustaa suoranaista kvanttiloikkaa suorituskyvyssä ja grafiikan tekoälytehostuksessa. Säteenseurannan ja ultrasuurten FPS-pelinopeuksien ansiosta pääset kokemaan virtuaaliset maailmat todella elävän tuntuisina. Pääset myös tutustumaan mullistaviin uusiin tapoihin luoda ja nopeuttaa työnkulkuja.
+
+NVIDIA Ada Lovelace -arkkitehtuuri - Edellä aikaansa, etumatkaa peleihin.
+
+Uudet SM-moniprosessorit - Jopa kaksinkertainen suorituskyky ja energiatehokkuus
+Neljännen sukupolven Tensor-ytimet - Jopa kaksinkertainen tekoälyn suorituskyky
+Kolmannen sukupolven RT-ytimet - Jopa kaksinkertainen säteenseurannan suorituskyky
+Säteenseuranta - Hyperrealistista. Hypernopeasti.
+Ada-arkkitehtuuri päästää valon käyttäytymistä oikeassa maailmassa simuloivan säteenseurannan täyteen loistoonsa. RTX 40 -sarjan ja kolmannen sukupolven RT-ytimien tehon ansiosta pääset kokemaan virtuaalimaailmat tarkempina kuin koskaan aiemmin.
+
+NVIDIA DLSS 3 -Tekoälyllä lisää kerrointa suorituskykyyn.
+DLSS on mullistava läpimurto grafiikan tekoälytehostuksessa, sillä se parantaa suorituskykyä massiivisesti. DLSS 3 luo kuvaan korkealaatuisia lisäfreimejä tekoälyn avulla hyödyntämällä GeForce RTX 40 -sarjan grafiikkasuorittimien uusien neljännen sukupolven Tensor-ytimien ja Optical Flow Accelerator -kiihdyttimen tehoa.
+
+NVIDIA Reflex - Voitto on kiinni millisekunneista.
+NVIDIA Reflex ja GeForce RTX 40 -sarjan grafiikkasuorittimet varmistavat alhaisimman latenssin ja parhaat vasteajat, mikä on voittoisa yhdistelmä peleissä. Reflex on järjestelmän latenssin optimointiin ja mittaamiseen suunniteltu teknologia, joka auttaa nopeuttamaan kohteen saamista tähtäimeen, reaktioaikoja ja tähtäyksen tarkkuutta',
+'GPU
+GPU: NVIDIA GeForce RTX 4090
+CUDA coret: 16384
+Kellotaajuus: 2580 MHz (Boost) / 2595 MHz (1-Click OC)
+
+Muisti
+Määrä: 24GB GDDR6X
+Muistiväylä: 384-bit
+Nopeus: 21 Gbps
+
+Liitännät
+
+1 x HDMI 2.1a
+3 x DisplayPort 1.4a
+Muuta
+Väylä: PCIE 4.0
+Mitat:
+Kiinnitysraudalla: 352 x 153 x 74 mm
+Ilman kiinnitysrautaa: 336 x 138 x 74 mm
+Suositeltu virtalähteen koko: 850W
+Virtaliitännät: 1 x 16-pin
+Sisältyvät tarvikkeet:
+
+1-Click Sync Pro -kaapeli x 2
+ARGB Dark Obelisk -näytönohjaimen tuki
+PCIe 16-pin to 4 x PCIe 8-pin adapteri
+1-Clip Booster 2.0 -tuuletin',
+'Tuotekoodi: 49NXM5MD6DSK
+EAN: 4895147150055',4);
+
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Gigabyte GeForce RTX 3070 -näytönohjain, 8GB', 779.90, 
+'GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – 
+NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan 
+ja huippuluokan tekoälytoiminnot.','GeForce RTX™ 30 -sarjan grafiikkasuorittimet antavat äärimmäisen suorituskyvyn niin pelaajien kuin luovan työn tekijöidenkin käyttöön Tehon salaisuus on Ampere – NVIDIAN toisen sukupolven RTX-arkkitehtuuri, jonka uudistetut RT- ja Tensor-ytimet sekä SM-monisuorittimet varmistavat tähän asti realistisimman säteenseurantagrafiikan ja huippuluokan tekoälytoiminnot.
+
+Reaaliaikaisen säteenseurannan tinkimättömän kuvanlaadun ja tekoälyn vauhdittaman DLSS:n äärimmäisen suorituskyvyn ansiosta voit kokea suosituimmat nykyiset hittipelit aivan uudella tasolla. RTX. It’s On.
+
+DLSS:n tekoälykiihdytys. - Maksimaalinen FPS-nopeus. Maksimilaatu. Tekoälyn voimalla.
+NVIDIA DLSS on mullistava tekoälyrenderöintitekniikka, joka nostaa freiminopeudet vähintään 1,5-kertaisiksi kuvanlaadusta tinkimättä hyödyntämällä GeForce RTX:n erityisesti tekoälylle varattuja Tensor-ytimiä. Se varmistaa suorituskyvyn, joka antaa varaa virittää asetukset huippuunsa ja nostaa resoluution uskomattoman visuaalisen kokemuksen antavalle tasolle. Tekoäly mullistaa pelaamisen.
+
+Voitto on kiinni millisekunneista
+NVIDIA Reflex antaa äärimmäisen kilpailuedun. Alhaisin latenssi. Erinomaiset vasteajat. GeForce RTX 30 -sarjan grafiikkasuorittimien ja NVIDIA® G-SYNC® -pelinäyttöjen teholla. Mullistava teknologiapaketti mittaa ja optimoi järjestelmän latenssin kilpapelejä varten, jotta saat kohteet tähtäimeen nopeasti, pystyt reagoimaan nopeammin ja voit parantaa tähtäystarkkuuttasi.
+
+Lisätehoa luovaan työhösi
+GeForce RTX 30 -sarjan grafiikkasuorittimet nostavat luovat projektisi aivan uudelle tasolle. Tekoälykiihdytys suosittuihin luovan työn sovelluksiin. NVIDIA Studio -järjestelmän erilliset ohjaimet ja eksklusiiviset työkalut. Suunniteltu rikkomaan suorituskykyennätykset. Haluatpa sitten renderöidä monimutkaisia 3D-kohtauksia, muokata 8K-videokuvaa tai livestriimata parhaalla koodaustasolla ja kuvanlaadulla, GeForce RTX -grafiikkasuorittimet antavat käyttöösi työsi tarvitseman tehon.
+
+Striimaa taiturimaisesti
+Tee livestriimeissäsi vaikutus vakuuttavalla grafiikalla ja sulavalla ja nykimättömällä kuvalla. Uuden sukupolven yhdistetty laitteistopohjainen koodaus ja koodauksen purku auttavat esittelemään parhaat pelihetkesi uskomattoman yksityiskohtaisesti. Upouusi NVIDIAN pelikuvan lähetyssovellus nostaa livestriimisi aivan uudelle tasolla tehokkailla tekoälytoiminnoilla, jotka parantavat äänen ja videokuvan laatua virtuaalitaustan, verkkokameran automaattikehysten ja mikrofonin taustamelun poiston kaltaisilla tehosteilla. GeForce RTX 30 -sarjan grafiikkasuorittimien suorituskyky ja kuvanlaatu varmistavat, että yleisösi pääsee aina nauttimaan erinomaisesta kuvanlaadusta.
+
+DirectX 12 Ultimate
+Kehittäjät voivat nyt lisätä mahtavia grafiikkatehosteita Microsoft Windows -pohjaisiin PC-peleihin. GeForce RTX -näytönohjaimissa on kehittyneet DX12-ominaisuudet, kuten säteenseuranta ja VSR (Variable Rate Shading), jotka herättävät pelit eloon ultrarealistisilla visuaalisilla tehosteilla ja suurilla freiminopeuksilla.
+
+Muut ominaisuudet ja edut:
+Virtuaalitodellisuus
+Paras grafiikkateho takaa sulavat ja mukaansa tempaavat VR-kokemukset.
+
+NVIDIA G-SYNC
+Pelaa sulavalla ja repeytymättömällä kuvalla jopa 360 Hz:n virkistystaajuudella ja HDR-tarkkuudella. Tämä on vannoutuneiden pelaajien äärimmäinen pelinäyttö ja luottolaitteisto.','GPU
+GPU: NVIDIA GeForce RTX 3070 Ti
+CUDA coret: 6144
+Kellotaajuus: 1770 Mhz (Core)
+
+Muisti
+Määrä: 8GB GDDR6X
+Muistiväylä: 256-bit
+Kellotaajuus: 19 Gbps
+Kaistanleveys: 608 GB/s
+
+Liitännät
+
+2 x DisplayPort 1.4a
+2 x HDMI 2.1
+Muuta
+Väylä: PCI-Express 4.0 x 16x
+Mitat (PxL): 320 x 129 mm x 55 mm / 2.7 slot
+Suositeltu virtalähteen koko: 750W
+Virtaliitännät: 2 x 8-pin','Tuotekoodi: GV-N307TGAMING-8GD
+EAN: 4719331310974',4);
+
+/*Emolevyt*/
 
 INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Asus TUF B550 ATX -emolevy', 179.90,'Kestävä. vakaa. luotettava.
 TUF GAMING B550 PRO tislaa uusimman AMD-alustan olennaiset osat ja yhdistää ne pelivalmiisiin ominaisuuksiin ja todistettuun kestävyyteen. Tämä emolevy on suunniteltu sotilaskäyttöön tarkoitetuilla komponenteilla, päivitetyllä tehoratkaisulla ja kattavilla jäähdytysvaihtoehdoilla. Kun rakennat TUF Gaming -emolevyllä, hyödyt myös TUF Gaming Alliancesta - ASUS-yhteistyöstä luotettujen teollisuuskumppaneiden kanssa, mikä takaa helpomman rakentamisen, parhaan yhteensopivuuden ja täydentävän estetiikan komponenteista toiseen.', 'Kestävä. vakaa. luotettava.
@@ -208,6 +441,8 @@ Realtek® ALC897 Codec
 Verkkokortti:
 1x Intel® L225V 2.5Gbps LAN controller', 'Tuotekoodi: PRO-Z690-A-DDR4
 EAN: 4719072886622', 1);
+
+/*Prosessorit*/
 INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Asus TUF B650 ATX -emolevy', 279.90,'ASUS TUF GAMING B650M-PLUS 
 on AM5-kantainen mATX -peliemolevy Ryzen 7000-sarjan prosessoreille, jossa on PCIe 5.0 M.2-tuki, kaksi M.2-liitäntää, 2,5 Gb LAN, DDR5-muistituki, 12+2 tehoporrasta ja 
 runsaasti liitäntöjä erilaisiin tarpeisiin, unohtamatta Asus Aura Sync RGB-tukea.','ASUS TUF GAMING B650M-PLUS on AM5-kantainen mATX -peliemolevy Ryzen 7000-sarjan prosessoreille, 
@@ -382,6 +617,8 @@ Muistikanavat: 2
 Maksimi muistikapasiteetti: 128 GB', 'Tuotekoodi: BX8071513600K
 EAN: 5032037258746', 5);
 
+
+/*Muistit*/
 INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Kingston 16GB Fury Beast', 73.90, 'Matalaprofiilinen lämmönlevittimen design.
 Kustannustehokas ja suorituskykyinen DDR4-päivitys.
 Intel XMP-valmis.
@@ -501,6 +738,8 @@ Takuu: Elinikäinen
 Ominaisuudet: Intel XMP 2.0 (Extreme Memory Profile) Ready', 'Tuotekoodi: F4-3200C16D-16GVKB
 EAN: 4719692004970', 3);
 
+
+/*SSD-levyt*/
 INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Samsung 1TB 980 SSD-levy', 114.90,'Päivitä NVMe:n huippunopeuksiin
 On aika ottaa kaikki irti tietokoneesi potentiaalista 980-mallin avulla. Riippumatta siitä tarvitsetko lisää sujuvuutta pelaamiseen vai tehoa vaativan grafiikan käsittelyyn työtehtävissäsi,
 980 on erinomainen valinta. Se tarjoaa luokkansa parasta SSD-suorituskykyä, joka perustuu NVMe- ja PCIe 3.0 -tekniikkaan.', 'Päivitä NVMe:n huippunopeuksiin
