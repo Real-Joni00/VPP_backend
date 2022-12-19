@@ -472,9 +472,12 @@ Verkkokortti:
 1 x Realtek 2.5Gb Ethernet', 'Tuotekoodi: TUF-GAMING-B650-PLUS
 EAN: 4711081912767', 1);
 
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 7 5800X3D', 459.90,'Tekniset tiedot:
-
-Malli: Ryzen 7 5800X3D
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 7 5800X3D', 459.90,
+'AMD Ryzen 5000 -sarjan suorittimet tarjoavat edistyksellisen prosessoriarkkitehtuurin pelaajille ja sisällöntuottajille. Pelaatpa uusimpia pelejä, suunnittelet pilvenpiirtäjiä tai analysoit dataa, tarvitset prosessorin, joka mahdollistaa tarvitsemasi suorituskyvyn. AMD:n Zen 3 -prosessoriarkkitehtuuri nostaa suorituskyvyn uudelle tasolle niin peleissä kuin myös useita prosessoriytimiä ja -säikeitä käyttävissä sovelluksissa, kuten 3D- ja videorenderöinti.',
+'Erittäin tehokas AMD Ryzen™ 7 -prosessori. Neljännen sukupolven AMD Ryzen™ -prosessoreissa on 7nm Zen 3 ydin, joka asettaa standardin korkealle suorituskyvylle. Prosessorit suunniteltiin rikkomaan odotukset ja asettamaan uusi standardi peliprosessoreille. Prosessori on yhteensopiva emolevyjen kanssa, joissa on AM4 prosessorikanta.
+Prosessorissa on riittävästi tehoa VR-kokemuksen tarjoamiseen. AMD Ryzen™ -prosessori täyttää vaatimukset Oculus Rift-, HTC Vive- tai Windows® Mixed Reality Premium järjestelmien käyttämiseen.
+AMD StoreMI Technology ohjelman avulla pystyt yhdistämään SSD- ja HDD-tallennustilat yhdeksi järjestelmäksi, täten nopeuttaen tiedostojen tai esimerkiksi pelien lukua HDD-tallennustilasta.',
+'Malli: Ryzen 7 5800X3D
 Ydinten määrä: 8
 Threadien määrä: 16
 Kellotaajuus:
@@ -497,9 +500,13 @@ AMD StoreMI Technology
 AMD "Zen 3" Core Architecture
 AMD Ryzen™ VR-Ready Premium', 'Tuotekoodi: 100-100000651WOF
 EAN: 0730143313797',5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 5 5600X', 209.90,'Tekniset tiedot:
-
-Malli: Ryzen 5 5600
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 5 5600X', 209.90,
+'Erittäin tehokas AMD Ryzen™ 5 -prosessori. Neljännen sukupolven AMD Ryzen™ -prosessoreissa on 7nm Zen 3 ydin, joka asettaa standardin korkealle suorituskyvylle. Prosessorit suunniteltiin rikkomaan odotukset ja asettamaan uusi standardi peliprosessoreille. Prosessorissa on 6 ydintä, 12 säiettä ja 35 MB älykästä cachea, joka jatkuvasti optimoi suorituskykyä. Prosessori on yhteensopiva emolevyjen kanssa, joissa on AM4 prosessorikanta.',
+'Erittäin tehokas AMD Ryzen™ 5 -prosessori. Neljännen sukupolven AMD Ryzen™ -prosessoreissa on 7nm Zen 3 ydin, joka asettaa standardin korkealle suorituskyvylle. Prosessorit suunniteltiin rikkomaan odotukset ja asettamaan uusi standardi peliprosessoreille. Prosessorissa on 6 ydintä, 12 säiettä ja 35 MB älykästä cachea, joka jatkuvasti optimoi suorituskykyä. Prosessori on yhteensopiva emolevyjen kanssa, joissa on AM4 prosessorikanta.
+Prosessorissa on riittävästi tehoa VR-kokemuksen tarjoamiseen. AMD Ryzen™ -prosessori täyttää vaatimukset Oculus Rift-, HTC Vive- tai Windows® Mixed Reality Premium järjestelmien käyttämiseen.
+AMD StoreMI Technology ohjelman avulla pystyt yhdistämään SSD- ja HDD-tallennustilat yhdeksi järjestelmäksi, täten nopeuttaen tiedostojen tai esimerkiksi pelien lukua HDD-tallennustilasta.
+AMD Ryzen™ Master Utility ohjelman avulla pystyt valvomaan tietokonettasi ja tekemään säätöjä. Tämän ohjelman avulla pystyt helposti ylikellottamaan prosessorin ja tallentamaan eri profiileja esimerkiksi eri käyttötarkoituksia varten.',
+'Malli: Ryzen 5 5600
 Ydinten määrä: 6
 Threadien määrä: 12
 Kellotaajuus:
@@ -523,12 +530,13 @@ AMD StoreMI Technology
 AMD "Zen 3" Core Architecture
 AMD Ryzen™ VR-Ready Premium', 'Tuotekoodi: 100-100000927BOX
 EAN: 0730143314190', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 5 7600X', 319.90,'Puhdasta pelisuorituskykyä - hanki 6-ytiminen prosessori, joka on suunniteltu intensiiviseen pelitoimintaan!
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('AMD Ryzen 5 7600X', 319.90,'Ryzen 7000 esittelee maailman ensimmäiset 5 nm:n prosessoriytimet, jotka tarjoavat huippusuorituskyvyn ja energiatehokkuuden, uusimman Zen 4 -arkkitehtuurin, sekä kerroinlukottomat versiot ylikellotusta varten (7950X, 7900X, 7700X ja 7600X). Ryzen 7000 -sarja tarjoaa äärimmäistä harrastajasuorituskykyä ja reilusti yli 5 GHz:n taajuudet parhaan pelikokemuksen ja erinomaisen sovellussuorituskyvyn takaamiseksi.',
+'Ryzen 7000 esittelee maailman ensimmäiset 5 nm:n prosessoriytimet, jotka tarjoavat huippusuorituskyvyn ja energiatehokkuuden, uusimman Zen 4 -arkkitehtuurin, sekä kerroinlukottomat versiot ylikellotusta varten (7950X, 7900X, 7700X ja 7600X). Ryzen 7000 -sarja tarjoaa äärimmäistä harrastajasuorituskykyä ja reilusti yli 5 GHz:n taajuudet parhaan pelikokemuksen ja erinomaisen sovellussuorituskyvyn takaamiseksi.
 
-Tekniset tiedot:
+Täysin uusi 6 nm:n I/O Die integroidulla AMD RDNA 2 -näytönohjaimella ja edistyneellä pienitehoisella arkkitehtuurilla (parempi hyötysuhde/pienempi virrankulutus tyhjäkäynnillä ja keskikuormituksella). Ryzen 7000 mahdollistaa tuen Dual Channel DDR5:lle ja esittelee uuden AMD EXPO:n DDR5-ylikellotuksen helpottamiseksi. Mukana PCIe 5.0 -tuki näytönohjaimille ja NVME SSD -tallennustilalle, sekä usean sukupolven tukea varten rakennettu AM5-kanta.
 
-Yleistä
-Malli: Ryzen 5 7600X
+AMD ja useimmat kolmannen osapuolen AM4-jäähdyttimet ovat edelleen yhteensopivia AM5:n kanssa.',
+'Malli: Ryzen 5 7600X
 Ydinten määrä: 6
 Threadien määrä: 12
 Kellotaajuus:
@@ -565,9 +573,12 @@ Tuetut teknologiat:
 AMD EXPO™ Technology
 AMD Ryzen™ Technologies', 'Tuotekoodi: 100-100000593WOF
 EAN: 0730143314442', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Intel Core i7-13700K', 569.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Intel Core i7-13700K', 569.90, '13. sukupolven Intel Core i7-13700K on kerroinlukoton suoritin integroidulla näytönohjaimella. Mukana Intel Adaptive Boost -teknologia, Intel Thermal Velocity Boost, Intel Turbo Boost Max -teknologia 3.0. PCIe 5.0/4.0 -tuki ja DDR5- ja DDR4-tuki.',
+'13. sukupolven Intel Core i7-13700K on kerroinlukoton suoritin integroidulla näytönohjaimella. Mukana Intel Adaptive Boost -teknologia, Intel Thermal Velocity Boost, Intel Turbo Boost Max -teknologia 3.0. PCIe 5.0/4.0 -tuki ja DDR5- ja DDR4-tuki.
 
-Malli: Core i7-13700K
+13. sukupolven Intel Core i7 -prosessorit on optimoitu pelaajille ja korkean suorituskyvyn tuottavuuteen.
+Yhteensopiva Intel 700-sarjan ja Intel 600-sarjan piirisarjaan perustuvien emolevyjen kanssa.',
+'Malli: Core i7-13700K
 Ydinten määrä: 16 (8P + 8E)
 Threadien määrä: 24
 Kellotaajuus: 3.40 GHz (Base, P-core) / 2.50 GHz (Base, E-core)
@@ -591,9 +602,13 @@ Maksimi muistinopeus: DDR5 5600 / DDR4 3200 MT/s
 Muistikanavat: 2
 Maksimi muistikapasiteetti: 128 GB', 'Tuotekoodi: BX8071513700K
 EAN: 5032037258708', 5);
-INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_pitka, tuotekoodi, kategoria_id) VALUES ('Intel Core i5-13600K', 429.90,'Tekniset tiedot:
+INSERT INTO tuotteet (nimi, hinta, tuotekuvaus_lyhyt, tuotekuvaus_pitka, tekniset_tiedot, tuotekoodi, kategoria_id) VALUES ('Intel Core i5-13600K', 429.90, 
+'13. sukupolven Intel Core i5-13600K on kerroinlukoton suoritin integroidulla näytönohjaimella. Mukana Intel Adaptive Boost -teknologia, Intel Thermal Velocity Boost, Intel Turbo Boost Max -teknologia 3.0. PCIe 5.0/4.0 -tuki ja DDR5- ja DDR4-tuki.',
+'13. sukupolven Intel Core i5-13600K on kerroinlukoton suoritin integroidulla näytönohjaimella. Mukana Intel Adaptive Boost -teknologia, Intel Thermal Velocity Boost, Intel Turbo Boost Max -teknologia 3.0. PCIe 5.0/4.0 -tuki ja DDR5- ja DDR4-tuki.
 
-Malli: Core i5-13600K
+13. sukupolven Intel Core i5 -prosessorit on optimoitu pelaajille ja korkean suorituskyvyn tuottavuuteen.
+Yhteensopiva Intel 700-sarjan ja Intel 600-sarjan piirisarjaan perustuvien emolevyjen kanssa.',
+'Malli: Core i5-13600K
 Ydinten määrä: 14 (6P + 8E)
 Threadien määrä: 20
 Kellotaajuus: 3.50 GHz (Base, P-core) / 2.60 GHz (Base, E-core)
